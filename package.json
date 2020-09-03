@@ -7,7 +7,7 @@
   "scripts": {
     "prebuild": "npm run clean",
     "build": "tsc",
-    "postbuild": "rimraf dist/**/__tests__",
+    "postbuild": "rimraf 'dist/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
     "clean": "rimraf dist",
     "test": "jest src"
   },
