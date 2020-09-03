@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Compose and react upon redux actions",
   "private": true,
-  "main": "dist/index.js",
+  "main": "dist/ts-module.js",
   "scripts": {
     "prebuild": "npm run clean",
     "build": "tsc",
