@@ -9,6 +9,9 @@
     "build": "tsc",
     "postbuild": "rimraf 'dist/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
     "clean": "rimraf dist",
+    "start": "concurrently npm:start:*",
+    "start:build": "tsc --watch --preserveWatchOutput",
+    "start:test": "jest src --watch",
     "test": "jest src"
   },
   "repository": {
@@ -28,6 +31,7 @@
     "@types/jest": "^26.0.3",
     "@types/node": "^14.0.14",
     "commitizen": "^4.2.1",
+    "concurrently": "^5.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^4.2.5",
     "jest": "^26.1.0",
