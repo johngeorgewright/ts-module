@@ -12,7 +12,8 @@
     "start": "concurrently npm:start:*",
     "start:build": "tsc --watch --preserveWatchOutput",
     "start:test": "jest src --watch",
-    "test": "jest src"
+    "test": "jest src",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -40,12 +41,6 @@
     "rimraf": "^3.0.2",
     "ts-jest": "^26.5.3",
     "typescript": "^4.2.3"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
-    }
   },
   "lint-staged": {
     "*.{md,json,js,jsx,ts,tsx,yml,yaml}": [
