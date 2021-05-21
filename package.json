@@ -5,11 +5,9 @@
   "private": true,
   "main": "dist/ts-module.js",
   "scripts": {
-    "prebuild": "npm run clean",
-    "build": "tsc",
-    "postbuild": "rimraf 'dist/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
+    "build": "yarn clean && tsc && rimraf 'dist/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
     "clean": "rimraf dist",
-    "start": "concurrently npm:start:*",
+    "start": "concurrently yarn:start:*",
     "start:build": "tsc --watch --preserveWatchOutput",
     "start:test": "jest src --watch",
     "test": "jest src",
@@ -55,7 +53,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "cz-conventional-changelog"
     }
   }
 }
