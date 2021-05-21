@@ -18,8 +18,6 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Check dependencies
-        run: yarn --check-cache
       - name: Build
         run: yarn build
       - name: Test
