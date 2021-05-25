@@ -45,7 +45,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/npm", "virtual:75667890c0dfc35db1e7386b2f0243952aafcc6dcb4748b7608ca46f1f07abdd71745611943549b3195f204a61e00d858e0b6a69c286c3cc9c88cac22d733417#npm:7.1.3"],
             ["@semantic-release/release-notes-generator", "virtual:75667890c0dfc35db1e7386b2f0243952aafcc6dcb4748b7608ca46f1f07abdd71745611943549b3195f204a61e00d858e0b6a69c286c3cc9c88cac22d733417#npm:9.0.2"],
             ["@types/jest", "npm:26.0.23"],
-            ["@types/node", "npm:14.17.0"],
+            ["@types/node", "npm:14.17.1"],
             ["commitizen", "npm:4.2.4"],
             ["concurrently", "npm:6.1.0"],
             ["cz-conventional-changelog", "npm:3.3.0"],
@@ -1069,7 +1069,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/npm", "virtual:75667890c0dfc35db1e7386b2f0243952aafcc6dcb4748b7608ca46f1f07abdd71745611943549b3195f204a61e00d858e0b6a69c286c3cc9c88cac22d733417#npm:7.1.3"],
             ["@semantic-release/release-notes-generator", "virtual:75667890c0dfc35db1e7386b2f0243952aafcc6dcb4748b7608ca46f1f07abdd71745611943549b3195f204a61e00d858e0b6a69c286c3cc9c88cac22d733417#npm:9.0.2"],
             ["@types/jest", "npm:26.0.23"],
-            ["@types/node", "npm:14.17.0"],
+            ["@types/node", "npm:14.17.1"],
             ["commitizen", "npm:4.2.4"],
             ["concurrently", "npm:6.1.0"],
             ["cz-conventional-changelog", "npm:3.3.0"],
@@ -1777,10 +1777,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/node", [
-        ["npm:14.17.0", {
-          "packageLocation": "./.yarn/cache/@types-node-npm-14.17.0-2942ba859f-f437147b39.zip/node_modules/@types/node/",
+        ["npm:14.17.1", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-14.17.1-6efbb98787-3ab1180ff2.zip/node_modules/@types/node/",
           "packageDependencies": [
-            ["@types/node", "npm:14.17.0"]
+            ["@types/node", "npm:14.17.1"]
           ],
           "linkType": "HARD",
         }],
