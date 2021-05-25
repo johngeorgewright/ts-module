@@ -55,5 +55,8 @@
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "tslib": "^2.2.0"
   }
 }
