@@ -802,7 +802,7 @@ __metadata:
     "@types/jest": 26.0.23
     "@types/node": 14.17.1
     commitizen: 4.2.4
-    concurrently: 6.1.0
+    concurrently: 6.2.0
     cz-conventional-changelog: 3.3.0
     husky: 6.0.0
     jest: 26.6.3
@@ -2520,9 +2520,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"concurrently@npm:6.1.0":
-  version: 6.1.0
-  resolution: "concurrently@npm:6.1.0"
+"concurrently@npm:6.2.0":
+  version: 6.2.0
+  resolution: "concurrently@npm:6.2.0"
   dependencies:
     chalk: ^4.1.0
     date-fns: ^2.16.1
@@ -2535,7 +2535,7 @@ __metadata:
     yargs: ^16.2.0
   bin:
     concurrently: bin/concurrently.js
-  checksum: daa788a222c1c78604f01b39318a003260fb1c47bdaf0336587437414e7727b8de899bd66e58e922572c66a24308874d035caecbd9b1eead3ea451a52d1a8fec
+  checksum: e75f311dc77ee1b486ebb65d513e1e719cc2b7589f08f2f6263b93d7d71c72609ce8c57ed3a0f791484be7e5b4435621c7d5e6d190d076c76d593bdcdb9aaf08
   languageName: node
   linkType: hard
 
