@@ -28,6 +28,20 @@ jobs:
       - name: Publish Release
         id: release
         uses: codfish/semantic-release-action@v1
+        with:
+          plugins: |
+            [
+              "@semantic-release/commit-analyzer", 
+              "@semantic-release/release-notes-generator", 
+              "@semantic-release/npm", 
+              [
+                "@semantic-release/git",
+                {
+                  message: "chore: ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}",
+                },
+              ],
+              "@semantic-release/github"
+            ]
         env:
           GITHUB_TOKEN: ${{ secrets.PUSH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
