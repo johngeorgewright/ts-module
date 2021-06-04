@@ -1,24 +1,19 @@
-# This workflow will run tests using node and then publish a package to NPM with semantic release.
-# For more information see: https://help.github.com/actions/language-and-framework-guides/publishing-nodejs-packages
-
-name: NPM Publish
+name: Publish
 
 on:
   push:
     branches: [master]
 
 jobs:
-  publish-npm:
+  npm:
+    name: NPM
     runs-on: ubuntu-latest
     steps:
       - name: Checkout project
         uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-          persist-credentials: false
 
       - name: Install Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: 14
 
