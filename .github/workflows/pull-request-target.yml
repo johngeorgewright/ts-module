@@ -2,7 +2,7 @@ name: PR Target
 
 on:
   pull_request_target:
-    types: [opened]
+    types: [opened, edited]
 
 jobs:
   auto-approve:
