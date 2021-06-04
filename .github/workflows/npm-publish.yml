@@ -19,6 +19,9 @@ jobs:
         with:
           node-version: 14
 
+      - name: Setup
+        run: yarn
+
       - name: Test
         run: yarn test
 
@@ -26,7 +29,6 @@ jobs:
         run: yarn build
 
       - name: Publish Release
-        id: release
         uses: codfish/semantic-release-action@v1
         with:
           plugins: |
