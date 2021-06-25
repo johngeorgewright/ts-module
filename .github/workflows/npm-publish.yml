@@ -10,6 +10,8 @@ jobs:
     steps:
       - name: Checkout project
         uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.PUSH_TOKEN }}
 
       - name: Install Node.js
         uses: actions/setup-node@v2
@@ -28,5 +30,5 @@ jobs:
       - name: Release
         run: yarn semantic-release
         env:
-          GITHUB_TOKEN: ${{ secrets.PUSH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
