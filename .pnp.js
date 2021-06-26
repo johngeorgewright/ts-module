@@ -52,7 +52,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["husky", "npm:6.0.0"],
             ["jest", "virtual:88f814a124068bdc4740e859aad4ec1d849b5be1a2e73fe9d27fb2e081860b9472864f073d3387c34e778af219e8b5f23381757469cefcb8753637c931bdace5#npm:27.0.5"],
             ["lint-staged", "npm:11.0.0"],
-            ["prettier", "npm:2.3.1"],
+            ["prettier", "npm:2.3.2"],
             ["rimraf", "npm:3.0.2"],
             ["semantic-release", "npm:17.4.4"],
             ["ts-jest", "virtual:88f814a124068bdc4740e859aad4ec1d849b5be1a2e73fe9d27fb2e081860b9472864f073d3387c34e778af219e8b5f23381757469cefcb8753637c931bdace5#npm:27.0.3"],
@@ -1301,7 +1301,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["husky", "npm:6.0.0"],
             ["jest", "virtual:88f814a124068bdc4740e859aad4ec1d849b5be1a2e73fe9d27fb2e081860b9472864f073d3387c34e778af219e8b5f23381757469cefcb8753637c931bdace5#npm:27.0.5"],
             ["lint-staged", "npm:11.0.0"],
-            ["prettier", "npm:2.3.1"],
+            ["prettier", "npm:2.3.2"],
             ["rimraf", "npm:3.0.2"],
             ["semantic-release", "npm:17.4.4"],
             ["ts-jest", "virtual:88f814a124068bdc4740e859aad4ec1d849b5be1a2e73fe9d27fb2e081860b9472864f073d3387c34e778af219e8b5f23381757469cefcb8753637c931bdace5#npm:27.0.3"],
@@ -7691,10 +7691,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["prettier", [
-        ["npm:2.3.1", {
-          "packageLocation": "./.yarn/cache/prettier-npm-2.3.1-f8593fac45-9b4a695b87.zip/node_modules/prettier/",
+        ["npm:2.3.2", {
+          "packageLocation": "./.yarn/cache/prettier-npm-2.3.2-4467ec48dc-4fd89a7f6a.zip/node_modules/prettier/",
           "packageDependencies": [
-            ["prettier", "npm:2.3.1"]
+            ["prettier", "npm:2.3.2"]
           ],
           "linkType": "HARD",
         }]
