@@ -45,7 +45,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/npm", "virtual:e2302b9d9fb151122517f0eb31913e06cb6e3d3277c31b8fb71663d9b065f663b24f4e3ae982a3f3a86f5c86da9e59f3708464945e1da3b8e756937b34464e0d#npm:7.1.3"],
             ["@semantic-release/release-notes-generator", "virtual:88f814a124068bdc4740e859aad4ec1d849b5be1a2e73fe9d27fb2e081860b9472864f073d3387c34e778af219e8b5f23381757469cefcb8753637c931bdace5#npm:9.0.3"],
             ["@types/jest", "npm:27.0.1"],
-            ["@types/node", "npm:14.17.11"],
+            ["@types/node", "npm:14.17.12"],
             ["commitizen", "npm:4.2.4"],
             ["concurrently", "npm:6.2.1"],
             ["cz-conventional-changelog", "npm:3.3.0"],
@@ -1335,7 +1335,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/npm", "virtual:e2302b9d9fb151122517f0eb31913e06cb6e3d3277c31b8fb71663d9b065f663b24f4e3ae982a3f3a86f5c86da9e59f3708464945e1da3b8e756937b34464e0d#npm:7.1.3"],
             ["@semantic-release/release-notes-generator", "virtual:88f814a124068bdc4740e859aad4ec1d849b5be1a2e73fe9d27fb2e081860b9472864f073d3387c34e778af219e8b5f23381757469cefcb8753637c931bdace5#npm:9.0.3"],
             ["@types/jest", "npm:27.0.1"],
-            ["@types/node", "npm:14.17.11"],
+            ["@types/node", "npm:14.17.12"],
             ["commitizen", "npm:4.2.4"],
             ["concurrently", "npm:6.2.1"],
             ["cz-conventional-changelog", "npm:3.3.0"],
@@ -2073,10 +2073,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/node", [
-        ["npm:14.17.11", {
-          "packageLocation": "./.yarn/cache/@types-node-npm-14.17.11-1749a5f307-c52c533d83.zip/node_modules/@types/node/",
+        ["npm:14.17.12", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-14.17.12-6f997aabe9-5fdad55934.zip/node_modules/@types/node/",
           "packageDependencies": [
-            ["@types/node", "npm:14.17.11"]
+            ["@types/node", "npm:14.17.12"]
           ],
           "linkType": "HARD",
         }],
