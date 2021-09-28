@@ -45,7 +45,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/jest", "npm:27.0.2"],
             ["@types/node", "npm:14.17.19"],
             ["commitizen", "npm:4.2.4"],
-            ["concurrently", "npm:6.2.1"],
+            ["concurrently", "npm:6.2.2"],
             ["cz-conventional-changelog", "npm:3.3.0"],
             ["husky", "npm:7.0.2"],
             ["jest", "virtual:88f814a124068bdc4740e859aad4ec1d849b5be1a2e73fe9d27fb2e081860b9472864f073d3387c34e778af219e8b5f23381757469cefcb8753637c931bdace5#npm:27.2.2"],
@@ -1307,7 +1307,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/jest", "npm:27.0.2"],
             ["@types/node", "npm:14.17.19"],
             ["commitizen", "npm:4.2.4"],
-            ["concurrently", "npm:6.2.1"],
+            ["concurrently", "npm:6.2.2"],
             ["cz-conventional-changelog", "npm:3.3.0"],
             ["husky", "npm:7.0.2"],
             ["jest", "virtual:88f814a124068bdc4740e859aad4ec1d849b5be1a2e73fe9d27fb2e081860b9472864f073d3387c34e778af219e8b5f23381757469cefcb8753637c931bdace5#npm:27.2.2"],
@@ -3297,14 +3297,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["concurrently", [
-        ["npm:6.2.1", {
-          "packageLocation": "./.yarn/cache/concurrently-npm-6.2.1-d8f32616e4-818ad5ac70.zip/node_modules/concurrently/",
+        ["npm:6.2.2", {
+          "packageLocation": "./.yarn/cache/concurrently-npm-6.2.2-6e3cb76ad9-42e4eb4a0f.zip/node_modules/concurrently/",
           "packageDependencies": [
-            ["concurrently", "npm:6.2.1"],
+            ["concurrently", "npm:6.2.2"],
             ["chalk", "npm:4.1.2"],
             ["date-fns", "npm:2.23.0"],
             ["lodash", "npm:4.17.21"],
-            ["read-pkg", "npm:5.2.0"],
             ["rxjs", "npm:6.6.7"],
             ["spawn-command", "npm:0.0.2"],
             ["supports-color", "npm:8.1.1"],
