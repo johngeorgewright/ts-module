@@ -43,7 +43,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/npm", "virtual:88f814a124068bdc4740e859aad4ec1d849b5be1a2e73fe9d27fb2e081860b9472864f073d3387c34e778af219e8b5f23381757469cefcb8753637c931bdace5#npm:8.0.3"],
             ["@semantic-release/release-notes-generator", "virtual:26bef7164f48d044764cd43116294384229ad2f2c35b46556537f1ef43382b779f272bad9f935bedb8d5f0cd3bb5d71fbb788a0376f8f210aee6a1927e0d4392#npm:10.0.2"],
             ["@types/jest", "npm:27.0.3"],
-            ["@types/node", "npm:16.11.8"],
+            ["@types/node", "npm:16.11.9"],
             ["commitizen", "npm:4.2.4"],
             ["concurrently", "npm:6.4.0"],
             ["cz-conventional-changelog", "npm:3.3.0"],
@@ -1373,7 +1373,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/npm", "virtual:88f814a124068bdc4740e859aad4ec1d849b5be1a2e73fe9d27fb2e081860b9472864f073d3387c34e778af219e8b5f23381757469cefcb8753637c931bdace5#npm:8.0.3"],
             ["@semantic-release/release-notes-generator", "virtual:26bef7164f48d044764cd43116294384229ad2f2c35b46556537f1ef43382b779f272bad9f935bedb8d5f0cd3bb5d71fbb788a0376f8f210aee6a1927e0d4392#npm:10.0.2"],
             ["@types/jest", "npm:27.0.3"],
-            ["@types/node", "npm:16.11.8"],
+            ["@types/node", "npm:16.11.9"],
             ["commitizen", "npm:4.2.4"],
             ["concurrently", "npm:6.4.0"],
             ["cz-conventional-changelog", "npm:3.3.0"],
@@ -2188,10 +2188,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/node", [
-        ["npm:16.11.8", {
-          "packageLocation": "./.yarn/cache/@types-node-npm-16.11.8-0997b2bf26-c60418498f.zip/node_modules/@types/node/",
+        ["npm:16.11.9", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-16.11.9-fd7b539464-baec2e6471.zip/node_modules/@types/node/",
           "packageDependencies": [
-            ["@types/node", "npm:16.11.8"]
+            ["@types/node", "npm:16.11.9"]
           ],
           "linkType": "HARD",
         }],
