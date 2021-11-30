@@ -38,13 +38,13 @@
     "concurrently": "6.4.0",
     "cz-conventional-changelog": "3.3.0",
     "husky": "7.0.4",
-    "jest": "27.4.0",
+    "jest": "27.4.2",
     "lint-staged": "12.1.2",
     "prettier": "2.5.0",
     "rimraf": "3.0.2",
     "semantic-release": "18.0.1",
     "ts-jest": "27.0.7",
-    "typescript": "4.4.4"
+    "typescript": "4.5.2"
   },
   "lint-staged": {
     "*.{md,json,js,jsx,ts,tsx,yml,yaml}": [
@@ -58,5 +58,6 @@
   },
   "dependencies": {
     "tslib": "2.3.1"
-  }
+  },
+  "packageManager": "yarn@3.1.1"
 }
