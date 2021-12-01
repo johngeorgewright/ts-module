@@ -7,10 +7,10 @@
   "scripts": {
     "build": "yarn clean && tsc && rimraf 'dist/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
     "clean": "rimraf dist",
-    "start": "concurrently yarn:start:*",
+    "start": "concurrently --names=build,test --prefix-colors=yellow,blue 'yarn start:build' 'yarn start:test'",
     "start:build": "tsc --watch --preserveWatchOutput",
-    "start:test": "yarn jest src --watch",
-    "test": "yarn jest",
+    "start:test": "jest --watch",
+    "test": "jest",
     "prepare": "husky install"
   },
   "repository": {
