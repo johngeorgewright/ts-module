@@ -912,7 +912,7 @@ __metadata:
     "@semantic-release/release-notes-generator": 10.0.3
     "@types/jest": 27.0.3
     "@types/node": 16.11.11
-    "@types/source-map-support": ^0
+    "@types/source-map-support": 0.5.4
     commitizen: 4.2.4
     concurrently: 6.4.0
     cz-conventional-changelog: 3.3.0
@@ -922,9 +922,9 @@ __metadata:
     prettier: 2.5.1
     rimraf: 3.0.2
     semantic-release: 18.0.1
-    source-map-support: ^0.5.21
+    source-map-support: 0.5.21
     ts-jest: 27.1.0
-    ts-node: ^10.4.0
+    ts-node: 10.4.0
     tslib: 2.3.1
     typescript: 4.5.2
   languageName: unknown
@@ -1654,7 +1654,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/source-map-support@npm:^0":
+"@types/source-map-support@npm:0.5.4":
   version: 0.5.4
   resolution: "@types/source-map-support@npm:0.5.4"
   dependencies:
@@ -7736,6 +7736,16 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
+"source-map-support@npm:0.5.21":
+  version: 0.5.21
+  resolution: "source-map-support@npm:0.5.21"
+  dependencies:
+    buffer-from: ^1.0.0
+    source-map: ^0.6.0
+  checksum: 43e98d700d79af1d36f859bdb7318e601dfc918c7ba2e98456118ebc4c4872b327773e5a1df09b0524e9e5063bb18f0934538eace60cca2710d1fa687645d137
+  languageName: node
+  linkType: hard
+
 "source-map-support@npm:^0.5.17":
   version: 0.5.20
   resolution: "source-map-support@npm:0.5.20"
@@ -7743,16 +7753,6 @@ fsevents@^2.3.2:
     buffer-from: ^1.0.0
     source-map: ^0.6.0
   checksum: 43946aff452011960d16154304b11011e0185549493e65dd90da045959409fb2d266ba1c854fff3d5949f8e59382e3fcc7f7c5fa66136007a6750ad06c6c0baa
-  languageName: node
-  linkType: hard
-
-"source-map-support@npm:^0.5.21":
-  version: 0.5.21
-  resolution: "source-map-support@npm:0.5.21"
-  dependencies:
-    buffer-from: ^1.0.0
-    source-map: ^0.6.0
-  checksum: 43e98d700d79af1d36f859bdb7318e601dfc918c7ba2e98456118ebc4c4872b327773e5a1df09b0524e9e5063bb18f0934538eace60cca2710d1fa687645d137
   languageName: node
   linkType: hard
 
@@ -8383,7 +8383,7 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
-"ts-node@npm:^10.4.0":
+"ts-node@npm:10.4.0":
   version: 10.4.0
   resolution: "ts-node@npm:10.4.0"
   dependencies:
