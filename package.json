@@ -5,7 +5,7 @@
   "private": true,
   "main": "dist/ts-module.js",
   "scripts": {
-    "build": "yarn clean && tsc && rimraf 'dist/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
+    "build": "yarn clean && tsc",
     "clean": "rimraf dist",
     "start": "concurrently --names=build,test --prefix-colors=yellow,blue 'yarn start:build' 'yarn start:test'",
     "start:build": "tsc --watch --preserveWatchOutput",
@@ -34,6 +34,7 @@
     "@semantic-release/release-notes-generator": "10.0.3",
     "@types/jest": "27.0.3",
     "@types/node": "16.11.11",
+    "@types/source-map-support": "^0",
     "commitizen": "4.2.4",
     "concurrently": "6.4.0",
     "cz-conventional-changelog": "3.3.0",
@@ -43,7 +44,9 @@
     "prettier": "2.5.1",
     "rimraf": "3.0.2",
     "semantic-release": "18.0.1",
+    "source-map-support": "^0.5.21",
     "ts-jest": "27.1.0",
+    "ts-node": "^10.4.0",
     "typescript": "4.5.2"
   },
   "lint-staged": {
