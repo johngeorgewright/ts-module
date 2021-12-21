@@ -33,7 +33,7 @@
     "@semantic-release/npm": "8.0.3",
     "@semantic-release/release-notes-generator": "10.0.3",
     "@types/jest": "27.0.3",
-    "@types/node": "16.11.14",
+    "@types/node": "16.11.15",
     "@types/source-map-support": "0.5.4",
     "commitizen": "4.2.4",
     "concurrently": "6.5.1",
