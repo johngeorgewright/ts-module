@@ -9,6 +9,7 @@ This is a template repository for creating a NPM package with TypeScript.
 1. Remove the `private` property from `package.json` (if you want to publically publish your module)
 1. Search for all references of `secrets.` in the `.github` diectory and make sure you have the appropriate secrets registered in GitHub (Your Repo > Settings > Secrets)
 1. Delete the .github/dependabot.yml file (unless you wish to use that instead of renovate)
+1. Ammend the LICENSE with your name
 
 ## I'm not interesting in the zero installation / Yarn / PnP thing. I'd prefer to use NPM.
 
