@@ -15,7 +15,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 14
+          node-version-file: .nvmrc
 
       - name: Test
         run: npm install-ci-test
