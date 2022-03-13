@@ -1141,6 +1141,8 @@ __metadata:
   dependencies:
     "@commitlint/cli": 16.2.1
     "@commitlint/config-conventional": 16.2.1
+    "@commitlint/types": ^16.2.1
+    "@jest/types": ^27.5.1
     "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.2
@@ -1148,6 +1150,7 @@ __metadata:
     "@semantic-release/release-notes-generator": 10.0.3
     "@types/jest": 27.4.1
     "@types/node": 16.11.26
+    "@types/prettier": ^2.4.4
     "@types/source-map-support": 0.5.4
     commitizen: 4.2.4
     concurrently: 7.0.0
@@ -1887,6 +1890,13 @@ __metadata:
   version: 2.3.2
   resolution: "@types/prettier@npm:2.3.2"
   checksum: c4313e16650811f47b07a0fa7ac0742e966f61283a7292eb667fd4626d760bf3b7d896be3eaabb3354ad45fdbe3a340299b018dd3bcce1ff753d030a8cd2479c
+  languageName: node
+  linkType: hard
+
+"@types/prettier@npm:^2.4.4":
+  version: 2.4.4
+  resolution: "@types/prettier@npm:2.4.4"
+  checksum: 2c2cc57efd49c7d8907415a72f96c84a6dd8696dd3bf8aa4ca3a667427bebf71cbfbc912673624bdfc935d272d1c008c639cf155f6449315990a4dc110f0d216
   languageName: node
   linkType: hard
 

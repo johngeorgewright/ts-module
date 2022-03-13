@@ -1,4 +1,6 @@
-module.exports = {
+import { InitialOptionsTsJest } from 'ts-jest'
+
+const config: InitialOptionsTsJest = {
   preset: 'ts-jest',
   testEnvironment: 'node',
   globals: {
@@ -7,3 +9,5 @@ module.exports = {
     },
   },
 }
+
+export default config
