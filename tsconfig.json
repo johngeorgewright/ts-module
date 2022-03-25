@@ -1,21 +1,22 @@
 {
   "compilerOptions": {
-    "incremental": true,
-    "target": "es5",
-    "module": "commonjs",
-    "lib": ["dom", "es2018", "esnext.asynciterable"],
     "declaration": true,
-    "sourceMap": true,
-    "outDir": "./dist",
-    "downlevelIteration": true,
-    "strict": true,
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "incremental": true,
+    "lib": ["es2020"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noImplicitOverride": true,
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "resolveJsonModule": true
+    "outDir": "./dist",
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es6"
   },
-  "includes": ["src"]
+  "includes": ["src"],
+  "exclude": ["dist", "test", "jest.config.ts"]
 }
