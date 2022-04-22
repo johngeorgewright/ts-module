@@ -1,6 +1,6 @@
 {
   "name": "@johngeorgewright/ts-module",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "description": "Compose and react upon redux actions",
   "private": true,
   "main": "dist/ts-module.js",
