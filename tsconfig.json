@@ -18,5 +18,5 @@
     "target": "es6"
   },
   "includes": ["src"],
-  "exclude": ["dist", "test", "jest.config.ts"]
+  "exclude": ["commitlint.config.ts", "dist", "test", "jest.config.ts"]
 }
