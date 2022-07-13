@@ -34,7 +34,7 @@
     "@semantic-release/github": "8.0.5",
     "@semantic-release/npm": "9.0.1",
     "@semantic-release/release-notes-generator": "10.0.3",
-    "@types/jest": "28.1.4",
+    "@types/jest": "28.1.5",
     "@types/node": "16.11.43",
     "@types/source-map-support": "0.5.4",
     "commitizen": "4.2.4",
