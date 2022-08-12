@@ -34,7 +34,7 @@
     "@semantic-release/npm": "^9.0.1",
     "@semantic-release/release-notes-generator": "^10.0.3",
     "@types/jest": "^27.5.0",
-    "@types/node": "^16.11.47",
+    "@types/node": "^16.11.48",
     "commitizen": "^4.2.5",
     "concurrently": "^7.3.0",
     "cz-conventional-changelog": "^3.3.0",
