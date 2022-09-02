@@ -16,4 +16,4 @@ This is a template repository for creating a NPM package with TypeScript.
 By default, this project's dependencies is kept up-to-date with [renovate](https://www.mend.io/free-developer-tools/renovate/). This project may also be set-up for dependabot too. To do so:
 
 1. Remove the `renovate.json` file
-1. Uncomment the lines in `.github/dependabot.yml`
+1. `mv .github/.dependabot.yml .github/dependabot.yml`
