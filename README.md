@@ -11,15 +11,9 @@ This is a template repository for creating a NPM package with TypeScript.
 1. Delete the .github/dependabot.yml file (unless you wish to use that instead of renovate)
 1. Ammend the LICENSE with your name
 
-## I'm not interesting in the zero installation / Yarn / PnP thing. I'd prefer to use NPM.
+## Dependency management
 
-1. When using this template choose to include **all** the branches
-1. Clone your project
-1. Use the `npm` branch: `git checkout npm`
-1. Delete the `master` branch: `git branch -D master`
-1. Recreate the master branch with the npm branch: `git checkout -b master`
-1. Delete the `npm` branch: `git branch -D npm`
-1. Force push your changes: `git push origin master -f`
-1. And delete the npm branch on the remote: `git push origin :npm`
+By default, this project's dependencies is kept up-to-date with [renovate](https://www.mend.io/free-developer-tools/renovate/). This project may also be set-up for dependabot too. To do so:
 
-Now follow the steps in "Setting up".
+1. Remove the `renovate.json` file
+1. Uncomment the lines in `.github/dependabot.yml`

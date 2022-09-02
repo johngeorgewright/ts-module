@@ -1,14 +1,14 @@
-version: 2
-updates:
-  - package-ecosystem: npm
-    directory: '/'
-    schedule:
-      interval: daily
-    open-pull-requests-limit: 10
-    target-branch: npm
-  - package-ecosystem: github-actions
-    directory: '/'
-    schedule:
-      interval: daily
-    open-pull-requests-limit: 10
-    target-branch: npm
+# Uncomment me if you want to use dependabot instead of renovate
+
+# version: 2
+# updates:
+#   - package-ecosystem: npm
+#     directory: '/'
+#     schedule:
+#       interval: daily
+#     open-pull-requests-limit: 10
+#   - package-ecosystem: github-actions
+#     directory: '/'
+#     schedule:
+#       interval: daily
+#     open-pull-requests-limit: 10

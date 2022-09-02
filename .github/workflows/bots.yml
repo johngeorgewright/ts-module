@@ -8,9 +8,105 @@ jobs:
   auto-approve:
     name: Auto Approve
     runs-on: ubuntu-latest
-    if: github.actor == 'renovate[bot]'
+    if: github.actor == 'renovate[bot]' || github.actor == 'dependabot[bot]'
     steps:
       - uses: actions/checkout@v3
       - uses: hmarr/auto-approve-action@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
+
+  yarn-sdk:
+    name: Rebuild Yarn SDKs
+    runs-on: ubuntu-latest
+    if: github.actor == 'renovate[bot]' || github.actor == 'dependabot[bot]'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: .nvmrc
+
+      - name: Restore cache
+        uses: actions/cache@v3
+        id: cache
+        with:
+          path: |
+            .yarn/unplugged
+            .yarn/install-state.gz
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: ${{ runner.os }}-yarn-
+
+      - name: Yarn
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: yarn install --immutable
+
+      - name: Update SDKs
+        run: yarn dlx @yarnpkg/sdks
+
+      - name: Commit
+        run: |
+          git config user.name "$(git log -n 1 --pretty=format:%an)"
+          git config user.email "$(git log -n 1 --pretty=format:%ae)"
+          git add .yarn
+
+          if [[ $(git status --short) ]]
+          then
+            git commit -m "chore: rebuild yarn sdks"
+            git push
+          fi
+
+  dependabot-yarn:
+    # Dependabot doesn't support yarn yet. This job is here until it does.
+    name: Ammend yarn.lock
+    runs-on: ubuntu-latest
+    if: github.actor == 'dependabot[bot]' && contains(github.event.pull_request.head.ref, 'dependabot/npm_and_yarn/')
+    # IMPORTANT: setting YARN_ENABLE_SCRIPTS=false is critical to ensure that untrusted
+    # PRs can't add an npm package and then use that to execute untrusted code in
+    # a trusted context. See links at the top of this workflow for further details.
+    # See also: https://github.com/yarnpkg/berry/issues/1679#issuecomment-669937860
+    env:
+      YARN_ENABLE_SCRIPTS: false
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          # Using a Personal Access Token here is required to trigger workflows on our new commit.
+          # The default GitHub token doesn't trigger any workflows.
+          # See: https://github.community/t/push-from-action-does-not-trigger-subsequent-action/16854/2
+          token: ${{ secrets.PUSH_TOKEN }}
+          ref: ${{ github.event.pull_request.head.ref }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: .nvmrc
+
+      - name: Restore cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            .yarn/cache
+            **/node_modules
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: ${{ runner.os }}-yarn-
+
+      - name: Yarn
+        env:
+          YARN_ENABLE_IMMUTABLE_INSTALLS: false
+        run: |
+          yarn install
+          yarn dedupe
+
+      - name: Update Yarn SDKs
+        if: contains(github.event.pull_request.head.ref, 'dependabot/npm_and_yarn/typescript-')
+        run: yarn dlx @yarnpkg/sdks vscode vim
+
+      - name: Commit
+        run: |
+          git config user.name "dependabot[bot]"
+          git config user.email "49699333+dependabot[bot]@users.noreply.github.com"
+          git add .yarn .pnp.* yarn.lock
+          git commit -m 'chore: yarn [dependabot skip]'
+          git push
