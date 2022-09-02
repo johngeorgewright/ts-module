@@ -5,8 +5,41 @@ on:
     branches: [master]
 
 jobs:
-  npm:
+  publish-test:
+    name: Test
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x, 18.x]
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Restore cache
+        uses: actions/cache@v3
+        id: cache
+        with:
+          path: |
+            .yarn/unplugged
+            .yarn/install-state.gz
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: ${{ runner.os }}-yarn-
+
+      - name: Yarn
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: yarn install --immutable
+
+      - name: Test
+        run: yarn test
+
+  publish-npm:
     name: NPM
+    needs: [publish-test]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout project
@@ -19,11 +52,19 @@ jobs:
         with:
           node-version-file: .nvmrc
 
-      - name: Setup
-        run: yarn --immutable
+      - name: Restore cache
+        uses: actions/cache@v3
+        id: cache
+        with:
+          path: |
+            .yarn/unplugged
+            .yarn/install-state.gz
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: ${{ runner.os }}-yarn-
 
-      - name: Test
-        run: yarn test
+      - name: Yarn
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: yarn install --immutable
 
       - name: Build
         run: yarn build
