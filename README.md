@@ -10,6 +10,7 @@ This is a template repository for creating a NPM package with TypeScript.
 1. Search for all references of `secrets.` in the `.github` diectory and make sure you have the appropriate secrets registered in GitHub (Your Repo > Settings > Secrets)
 1. Delete the .github/dependabot.yml file (unless you wish to use that instead of renovate)
 1. Ammend the LICENSE with your name
+1. If your packages are to be published publically, change the publish command in `release.config.js` to `yarn npm publish --access public`
 
 ## Dependency management
 

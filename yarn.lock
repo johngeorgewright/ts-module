@@ -1197,12 +1197,13 @@ __metadata:
     "@commitlint/types": 17.0.0
     "@jest/types": 29.0.3
     "@semantic-release/commit-analyzer": 9.0.2
+    "@semantic-release/exec": 6.0.3
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.6
-    "@semantic-release/npm": 9.0.1
     "@semantic-release/release-notes-generator": 10.0.3
     "@types/jest": 29.0.3
     "@types/node": 16.11.59
+    "@types/semantic-release": 17.2.4
     "@types/source-map-support": 0.5.6
     commitizen: 4.2.5
     concurrently: 7.4.0
@@ -1756,6 +1757,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@semantic-release/exec@npm:6.0.3":
+  version: 6.0.3
+  resolution: "@semantic-release/exec@npm:6.0.3"
+  dependencies:
+    "@semantic-release/error": ^3.0.0
+    aggregate-error: ^3.0.0
+    debug: ^4.0.0
+    execa: ^5.0.0
+    lodash: ^4.17.4
+    parse-json: ^5.0.0
+  peerDependencies:
+    semantic-release: ">=18.0.0"
+  checksum: c6ad2f02ff01a4709c4914f560d0343efea9afe993c733ff971da8bf89604a1460d87b26a1a2ace5992c5ace8e8d384cf314504e0c4b623fc8433e8e8d9e2fe0
+  languageName: node
+  linkType: hard
+
 "@semantic-release/git@npm:10.0.1":
   version: 10.0.1
   resolution: "@semantic-release/git@npm:10.0.1"
@@ -1823,29 +1840,6 @@ __metadata:
   peerDependencies:
     semantic-release: ">=18.0.0-beta.1"
   checksum: c240f9c6a0d32ce8d5f175df1cdc896eee5272a98b09f8fd65f4959ee96bdb6712406761b853e3026e084cbe9a5daf81272d50f4c95574e01c660cdfa0d14a66
-  languageName: node
-  linkType: hard
-
-"@semantic-release/npm@npm:9.0.1":
-  version: 9.0.1
-  resolution: "@semantic-release/npm@npm:9.0.1"
-  dependencies:
-    "@semantic-release/error": ^3.0.0
-    aggregate-error: ^3.0.0
-    execa: ^5.0.0
-    fs-extra: ^10.0.0
-    lodash: ^4.17.15
-    nerf-dart: ^1.0.0
-    normalize-url: ^6.0.0
-    npm: ^8.3.0
-    rc: ^1.2.8
-    read-pkg: ^5.0.0
-    registry-auth-token: ^4.0.0
-    semver: ^7.1.2
-    tempy: ^1.0.0
-  peerDependencies:
-    semantic-release: ">=19.0.0"
-  checksum: cd18eab713521566ba9aacaa63c2cf76ba1796d00e3f94579c56a591b21e050340a9021127685d10d55419a6eb0b545842a7a3b785ad10a94449ea32d588ee10
   languageName: node
   linkType: hard
 
@@ -2117,6 +2111,15 @@ __metadata:
   version: 0.12.1
   resolution: "@types/retry@npm:0.12.1"
   checksum: 5f46b2556053655f78262bb33040dc58417c900457cc63ff37d6c35349814471453ef511af0cec76a540c601296cd2b22f64bab1ab649c0dacc0223765ba876c
+  languageName: node
+  linkType: hard
+
+"@types/semantic-release@npm:17.2.4":
+  version: 17.2.4
+  resolution: "@types/semantic-release@npm:17.2.4"
+  dependencies:
+    "@types/node": "*"
+  checksum: b4a51db09fdb3fb823c1c826f21fc519ee37e81e238591d853ff556adee714e125314c0786b1ce3e99c32c6751df17c7008cf0d9aad9559d30fd5291eb942a33
   languageName: node
   linkType: hard
 
