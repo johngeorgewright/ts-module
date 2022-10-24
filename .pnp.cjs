@@ -42,7 +42,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/semantic-release", "npm:17.2.4"],\
             ["@types/source-map-support", "npm:0.5.6"],\
             ["commitizen", "npm:4.2.5"],\
-            ["concurrently", "npm:7.4.0"],\
+            ["concurrently", "npm:7.5.0"],\
             ["cz-conventional-changelog", "npm:3.3.0"],\
             ["husky", "npm:8.0.1"],\
             ["jest", "virtual:88f814a124068bdc4740e859aad4ec1d849b5be1a2e73fe9d27fb2e081860b9472864f073d3387c34e778af219e8b5f23381757469cefcb8753637c931bdace5#npm:29.2.1"],\
@@ -1700,7 +1700,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/semantic-release", "npm:17.2.4"],\
             ["@types/source-map-support", "npm:0.5.6"],\
             ["commitizen", "npm:4.2.5"],\
-            ["concurrently", "npm:7.4.0"],\
+            ["concurrently", "npm:7.5.0"],\
             ["cz-conventional-changelog", "npm:3.3.0"],\
             ["husky", "npm:8.0.1"],\
             ["jest", "virtual:88f814a124068bdc4740e859aad4ec1d849b5be1a2e73fe9d27fb2e081860b9472864f073d3387c34e778af219e8b5f23381757469cefcb8753637c931bdace5#npm:29.2.1"],\
@@ -4160,10 +4160,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["concurrently", [\
-        ["npm:7.4.0", {\
-          "packageLocation": "./.yarn/cache/concurrently-npm-7.4.0-6a6d8e6457-cc547866ad.zip/node_modules/concurrently/",\
+        ["npm:7.5.0", {\
+          "packageLocation": "./.yarn/cache/concurrently-npm-7.5.0-3391f9b984-7886e1c855.zip/node_modules/concurrently/",\
           "packageDependencies": [\
-            ["concurrently", "npm:7.4.0"],\
+            ["concurrently", "npm:7.5.0"],\
             ["chalk", "npm:4.1.2"],\
             ["date-fns", "npm:2.29.2"],\
             ["lodash", "npm:4.17.21"],\
