@@ -1230,7 +1230,7 @@ __metadata:
     "@semantic-release/github": 8.0.7
     "@semantic-release/release-notes-generator": 10.0.3
     "@types/jest": 29.2.4
-    "@types/node": 16.18.7
+    "@types/node": 16.18.9
     "@types/semantic-release": 17.2.4
     "@types/source-map-support": 0.5.6
     commitizen: 4.2.6
@@ -2100,10 +2100,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:16.18.7":
-  version: 16.18.7
-  resolution: "@types/node@npm:16.18.7"
-  checksum: a7fbc536d433c08adebcd788c2b2b28b4bec9b4cc493d3ed5fd98097bda7760893bacc06f97f45514a7f013f4fc952cbb3068166b6e9e7eebfe08e8e813f8f1c
+"@types/node@npm:16.18.9":
+  version: 16.18.9
+  resolution: "@types/node@npm:16.18.9"
+  checksum: 7dc9cb417869592b2ad64233d06cd3eda63b8ae31d72a0811e4f5ac5a2ef01feb4d4c91159481e506c7a56951981359e75069c7fae6f0de90fc0c3c8b69a36cd
   languageName: node
   linkType: hard
 
