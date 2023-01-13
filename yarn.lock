@@ -1231,7 +1231,7 @@ __metadata:
     "@semantic-release/release-notes-generator": 10.0.3
     "@types/jest": 29.2.5
     "@types/node": 16.18.11
-    "@types/semantic-release": 17.2.4
+    "@types/semantic-release": 17.2.5
     "@types/source-map-support": 0.5.6
     commitizen: 4.2.6
     concurrently: 7.6.0
@@ -2135,12 +2135,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/semantic-release@npm:17.2.4":
-  version: 17.2.4
-  resolution: "@types/semantic-release@npm:17.2.4"
+"@types/semantic-release@npm:17.2.5":
+  version: 17.2.5
+  resolution: "@types/semantic-release@npm:17.2.5"
   dependencies:
     "@types/node": "*"
-  checksum: b4a51db09fdb3fb823c1c826f21fc519ee37e81e238591d853ff556adee714e125314c0786b1ce3e99c32c6751df17c7008cf0d9aad9559d30fd5291eb942a33
+  checksum: 5474ca770d5cdc79ee8e146ce79cd47c1c11c7493484ddb39eb0e114da1cede1a3928e7e31223ab61241155f2b80d5da0345c80a16713bf2230812a0c41acb7f
   languageName: node
   linkType: hard
 
