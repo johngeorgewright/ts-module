@@ -4272,7 +4272,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["meow", "npm:8.1.2"],\
             ["split2", "npm:3.2.2"],\
             ["through2", "npm:4.0.2"],\
-            ["trim-off-newlines", "npm:1.0.1"]\
+            ["trim-off-newlines", "npm:1.0.3"]\
           ],\
           "linkType": "HARD"\
         }],\
@@ -10440,10 +10440,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["trim-off-newlines", [\
-        ["npm:1.0.1", {\
-          "packageLocation": "./.yarn/cache/trim-off-newlines-npm-1.0.1-1a87bef78d-ca644908ca.zip/node_modules/trim-off-newlines/",\
+        ["npm:1.0.3", {\
+          "packageLocation": "./.yarn/cache/trim-off-newlines-npm-1.0.3-f63e49d484-faf042bb7d.zip/node_modules/trim-off-newlines/",\
           "packageDependencies": [\
-            ["trim-off-newlines", "npm:1.0.1"]\
+            ["trim-off-newlines", "npm:1.0.3"]\
           ],\
           "linkType": "HARD"\
         }]\
