@@ -6,41 +6,19 @@ on:
 
 jobs:
   publish-test:
-    name: Test
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [14.x, 16.x, 18.x]
-    steps:
-      - name: Checkout project
-        uses: actions/checkout@v3
-
-      - name: Install Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-
-      - name: Restore cache
-        uses: actions/cache@v3
-        id: cache
-        with:
-          path: |
-            .yarn/unplugged
-            .yarn/install-state.gz
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: ${{ runner.os }}-yarn-
-
-      - name: Yarn
-        if: steps.cache.outputs.cache-hit != 'true'
-        run: yarn install --immutable
-
-      - name: Test
-        run: yarn test
+    uses: ./.github/workflows/pull-request.yml
+    with:
+      build: false
 
   publish-npm:
     name: NPM
     needs: [publish-test]
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: read
+
     steps:
       - name: Checkout project
         uses: actions/checkout@v3
@@ -51,6 +29,11 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version-file: .nvmrc
+
+      - name: Setup Registries
+        run: |
+          yarn config set --home 'npmRegistries["https://registry.npmjs.org"].npmAuthToken' '${{ secrets.NPM_TOKEN }}'
+          yarn config set --home npmPublishRegistry https://registry.npmjs.org
 
       - name: Restore cache
         uses: actions/cache@v3
@@ -73,4 +56,4 @@ jobs:
         run: yarn semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
