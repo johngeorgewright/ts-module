@@ -3,15 +3,22 @@
   "version": "3.0.1",
   "description": "Compose and react upon redux actions",
   "private": true,
-  "main": "dist/ts-module.js",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/es/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/es/index.js",
+      "require": "./dist/common/index.js"
+    }
+  },
   "scripts": {
-    "build": "yarn clean && tsc",
+    "build": "yarn clean && tsc && tsc --project tsconfig.common.json",
     "clean": "rimraf dist",
-    "start": "concurrently --names=build,test --prefix-colors=yellow,blue 'yarn start:build' 'yarn start:test'",
-    "start:build": "tsc --watch --preserveWatchOutput",
-    "start:test": "jest --watch",
+    "prepare": "husky install",
+    "start": "concurrently --names es,common 'yarn tsc --watch --preserveWatchOutput' 'yarn tsc --watch --preserveWatchOutput --project tsconfig.common.json'",
     "test": "jest",
-    "prepare": "husky install"
+    "test:coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",

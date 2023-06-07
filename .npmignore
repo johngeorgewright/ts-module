@@ -1,0 +1,17 @@
+docs
+.editorconfig
+.eslintrc.js
+.github
+.husky
+node_modules
+.nvmrc
+.pnp.*
+prettier.config.cjs
+release.config.js
+renovate.json
+test
+tsconfig.json
+tsconfig.*.json
+typedoc.json
+.vscode
+.yarn*

@@ -1,9 +1,12 @@
-import { JestConfigWithTsJest } from 'ts-jest'
+import { Config } from 'jest'
 
-const config: JestConfigWithTsJest = {
+const config: Config = {
+  moduleNameMapper: {
+    '^(.+)\\.js$': ['$1.js', '$1.ts'],
+  },
   testEnvironment: 'node',
   transform: {
-    '^.+\\.tsx?$': ['ts-jest', { tsconfig: 'tsconfig.test.json' }],
+    '^.+\\.tsx?$': ['ts-jest', { tsconfig: '<rootDir>/test/tsconfig.json' }],
   },
 }
 

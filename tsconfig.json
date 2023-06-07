@@ -4,18 +4,19 @@
     "esModuleInterop": true,
     "importHelpers": true,
     "incremental": true,
-    "lib": ["es2020"],
-    "module": "commonjs",
-    "moduleResolution": "node",
+    "lib": ["dom", "es2022"],
+    "module": "ESNext",
+    "moduleResolution": "nodenext",
     "noImplicitOverride": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "outDir": "./dist",
+    "outDir": "./dist/es",
     "resolveJsonModule": true,
+    "rootDir": "./src",
     "sourceMap": true,
     "strict": true,
-    "target": "es6"
+    "target": "ES2022"
   },
   "include": ["src"]
 }
