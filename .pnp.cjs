@@ -42,7 +42,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/semantic-release", "npm:20.0.1"],\
             ["@types/source-map-support", "npm:0.5.6"],\
             ["commitizen", "npm:4.3.0"],\
-            ["concurrently", "npm:8.1.0"],\
+            ["concurrently", "npm:8.2.0"],\
             ["cz-conventional-changelog", "npm:3.3.0"],\
             ["husky", "npm:8.0.3"],\
             ["jest", "virtual:88f814a124068bdc4740e859aad4ec1d849b5be1a2e73fe9d27fb2e081860b9472864f073d3387c34e778af219e8b5f23381757469cefcb8753637c931bdace5#npm:29.5.0"],\
@@ -1764,7 +1764,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/semantic-release", "npm:20.0.1"],\
             ["@types/source-map-support", "npm:0.5.6"],\
             ["commitizen", "npm:4.3.0"],\
-            ["concurrently", "npm:8.1.0"],\
+            ["concurrently", "npm:8.2.0"],\
             ["cz-conventional-changelog", "npm:3.3.0"],\
             ["husky", "npm:8.0.3"],\
             ["jest", "virtual:88f814a124068bdc4740e859aad4ec1d849b5be1a2e73fe9d27fb2e081860b9472864f073d3387c34e778af219e8b5f23381757469cefcb8753637c931bdace5#npm:29.5.0"],\
@@ -4209,16 +4209,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["concurrently", [\
-        ["npm:8.1.0", {\
-          "packageLocation": "./.yarn/cache/concurrently-npm-8.1.0-3ea86b9cbf-f767345c6e.zip/node_modules/concurrently/",\
+        ["npm:8.2.0", {\
+          "packageLocation": "./.yarn/cache/concurrently-npm-8.2.0-be774a222e-eafe6a4d9b.zip/node_modules/concurrently/",\
           "packageDependencies": [\
-            ["concurrently", "npm:8.1.0"],\
+            ["concurrently", "npm:8.2.0"],\
             ["chalk", "npm:4.1.2"],\
             ["date-fns", "npm:2.30.0"],\
             ["lodash", "npm:4.17.21"],\
-            ["rxjs", "npm:7.8.0"],\
+            ["rxjs", "npm:7.8.1"],\
             ["shell-quote", "npm:1.8.1"],\
-            ["spawn-command", "npm:0.0.2-1"],\
+            ["spawn-command", "npm:0.0.2"],\
             ["supports-color", "npm:8.1.1"],\
             ["tree-kill", "npm:1.2.2"],\
             ["yargs", "npm:17.7.2"]\
@@ -9701,6 +9701,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["tslib", "npm:2.3.1"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:7.8.1", {\
+          "packageLocation": "./.yarn/cache/rxjs-npm-7.8.1-41c443a75b-de4b53db10.zip/node_modules/rxjs/",\
+          "packageDependencies": [\
+            ["rxjs", "npm:7.8.1"],\
+            ["tslib", "npm:2.3.1"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["safe-buffer", [\
@@ -10052,10 +10060,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["spawn-command", [\
-        ["npm:0.0.2-1", {\
-          "packageLocation": "./.yarn/cache/spawn-command-npm-0.0.2-1-b5bde7f215-2cac851933.zip/node_modules/spawn-command/",\
+        ["npm:0.0.2", {\
+          "packageLocation": "./.yarn/cache/spawn-command-npm-0.0.2-014d4d5d9f-e35c5d2817.zip/node_modules/spawn-command/",\
           "packageDependencies": [\
-            ["spawn-command", "npm:0.0.2-1"]\
+            ["spawn-command", "npm:0.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\
