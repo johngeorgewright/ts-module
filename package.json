@@ -70,7 +70,7 @@
     }
   },
   "dependencies": {
-    "tslib": "2.6.0"
+    "tslib": "2.6.1"
   },
   "packageManager": "yarn@3.6.1"
 }
