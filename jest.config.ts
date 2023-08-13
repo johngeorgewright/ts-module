@@ -1,7 +1,7 @@
 import { Config } from 'jest'
 
 const config: Config = {
-  testEnvironment: 'jsdom',
+  testEnvironment: 'node',
   transform: {
     '^.+\\.ts$': ['ts-jest', { tsconfig: '<rootDir>/test/tsconfig.json' }],
   },

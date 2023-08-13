@@ -1,1 +1,1 @@
-export * from './ts-module.js'
+export * from '#ts-module'
