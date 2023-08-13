@@ -5,18 +5,18 @@
   "private": true,
   "type": "module",
   "sideEffects": false,
-  "main": "./dist/es/index.js",
   "exports": {
     ".": {
       "import": "./dist/es/index.js",
-      "require": "./dist/common/index.js"
+      "require": "./dist/common/index.cjs"
     }
   },
   "scripts": {
-    "build": "yarn clean && tsc && tsc --project tsconfig.common.json",
+    "build": "yarn clean && tsc && tsc --project tsconfig.common.json && yarn build:covertcommonext",
+    "build:covertcommonext": "renamer --force --find '/\\.(j|t)s/' --replace '.c$1s' dist/common/**/*",
     "clean": "rimraf dist",
     "prepare": "husky install",
-    "start": "concurrently --names es,common 'yarn tsc --watch --preserveWatchOutput' 'yarn tsc --watch --preserveWatchOutput --project tsconfig.common.json'",
+    "start": "concurrently --names es,common,renamer 'yarn tsc --watch --preserveWatchOutput' 'yarn tsc --watch --preserveWatchOutput --project tsconfig.common.json' \"nodemon --ext js --exec 'yarn build:covertcommonext' --watch dist/common\"",
     "test": "jest",
     "test:coverage": "jest --coverage"
   },
@@ -52,6 +52,7 @@
     "jest": "29.6.2",
     "lint-staged": "13.2.3",
     "prettier": "2.8.8",
+    "renamer": "4.0.0",
     "rimraf": "5.0.1",
     "semantic-release": "21.0.7",
     "source-map-support": "0.5.21",

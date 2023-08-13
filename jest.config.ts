@@ -1,12 +1,9 @@
 import { Config } from 'jest'
 
 const config: Config = {
-  moduleNameMapper: {
-    '^(.+)\\.js$': ['$1.js', '$1.ts'],
-  },
-  testEnvironment: 'node',
+  testEnvironment: 'jsdom',
   transform: {
-    '^.+\\.tsx?$': ['ts-jest', { tsconfig: '<rootDir>/test/tsconfig.json' }],
+    '^.+\\.ts$': ['ts-jest', { tsconfig: '<rootDir>/test/tsconfig.json' }],
   },
 }
 

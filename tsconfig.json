@@ -4,7 +4,7 @@
     "esModuleInterop": true,
     "importHelpers": true,
     "incremental": true,
-    "lib": ["dom", "es2022"],
+    "lib": ["es2022"],
     "module": "ESNext",
     "moduleResolution": "nodenext",
     "noImplicitOverride": true,
