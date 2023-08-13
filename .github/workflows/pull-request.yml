@@ -79,7 +79,7 @@ jobs:
           yarn link --private ../ts-module
           cat package.json | jq '.dependencies["@johngeorgewright/ts-module"] = "*"' > package-dep.json
           mv package-dep.json package.json
-          yarn
+          yarn --no-immutable
 
       - name: Test ts-module as an install module
         working-directory: test-project
