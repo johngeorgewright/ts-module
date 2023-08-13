@@ -75,7 +75,11 @@ jobs:
 
       - name: Install ts-module
         working-directory: test-project
-        run: yarn link --private ../ts-module
+        run: | # shell
+          yarn link --private ../ts-module
+          cat package.json | jq '.dependencies["@johngeorgewright/ts-module"] = "*"' > package-dep.json
+          mv package-dep.json package.json
+          yarn
 
       - name: Test ts-module as an install module
         working-directory: test-project
