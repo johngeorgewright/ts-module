@@ -28,21 +28,45 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Restore cache
-        uses: actions/cache@v3
-        id: cache
-        with:
-          path: |
-            .yarn/unplugged
-            .yarn/install-state.gz
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-
       - name: Yarn
-        if: steps.cache.outputs.cache-hit != 'true'
         run: yarn install --immutable
 
       - name: Build
         run: yarn build
 
       - name: Test
+        run: yarn test
+
+  test-importing:
+    name: Test importing
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16.x, 18.x, 20.x]
+
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@v3
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Rename module
+        run: | # shell
+          cat package.json | jq '.name = "test-project"' > package-rename.json
+          mv package-rename.json package.json
+          yarn
+
+      - name: Setup Yarn/Git
+        run: | # shell
+          git config --global user.name mol-ads-automation
+          git config --global user.email john.wright@mailonline.co.uk
+          git config --global url."https://${{ secrets.GITHUB_TOKEN }}@github.com/".insteadOf 'https://github.com/'
+
+      - name: Install ts-module
+        run: yarn add 'johngeorgewright/ts-module#head=${{ github.head_ref }}'
+
+      - name: Use module
         run: yarn test

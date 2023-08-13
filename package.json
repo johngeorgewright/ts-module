@@ -11,6 +11,12 @@
       "require": "./dist/common/index.cjs"
     }
   },
+  "imports": {
+    "#ts-module": {
+      "import": "./dist/es/ts-module.js",
+      "require": "./dist/common/ts-module.cjs"
+    }
+  },
   "scripts": {
     "build": "yarn clean && tsc && tsc --project tsconfig.common.json && yarn build:covertcommonext",
     "build:covertcommonext": "renamer --force --find '/\\.(j|t)s/' --replace '.c$1s' dist/common/**/*",
