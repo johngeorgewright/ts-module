@@ -47,26 +47,34 @@ jobs:
     steps:
       - name: Checkout project
         uses: actions/checkout@v3
+        with:
+          path: ts-module
+
+      - name: Checkout project
+        uses: actions/checkout@v3
+        with:
+          path: test-project
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Rename module
+      - name: Build ts-module
+        working-directory: ts-module
+        run: yarn build
+
+      - name: Rename project
+        working-directory: test-project
         run: | # shell
           cat package.json | jq '.name = "test-project"' > package-rename.json
           mv package-rename.json package.json
           yarn --no-immutable
 
-      - name: Setup Yarn/Git
-        run: | # shell
-          git config --global user.name mol-ads-automation
-          git config --global user.email john.wright@mailonline.co.uk
-          git config --global url."https://${{ secrets.GITHUB_TOKEN }}@github.com/".insteadOf 'https://github.com/'
-
       - name: Install ts-module
-        run: yarn add '@johngeorgewright/ts-module@johngeorgewright/ts-module#head=${{ github.head_ref }}'
+        working-directory: test-project
+        run: yarn link ../ts-module
 
-      - name: Use module
+      - name: Test ts-module as an install module
+        working-directory: test-project
         run: yarn test
