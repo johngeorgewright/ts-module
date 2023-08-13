@@ -66,7 +66,7 @@ jobs:
           git config --global url."https://${{ secrets.GITHUB_TOKEN }}@github.com/".insteadOf 'https://github.com/'
 
       - name: Install ts-module
-        run: yarn add 'johngeorgewright/ts-module#head=${{ github.head_ref }}'
+        run: yarn add '@johngeorgewright/ts-module@johngeorgewright/ts-module#head=${{ github.head_ref }}'
 
       - name: Use module
         run: yarn test
