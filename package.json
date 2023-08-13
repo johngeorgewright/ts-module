@@ -6,15 +6,15 @@
   "type": "module",
   "sideEffects": false,
   "exports": {
-    ".": {
-      "import": "./dist/es/index.js",
-      "require": "./dist/common/index.cjs"
+    "*": {
+      "import": "./dist/es/public/*.js",
+      "require": "./dist/common/public/*.cjs"
     }
   },
   "imports": {
-    "#ts-module": {
-      "import": "./dist/es/ts-module.js",
-      "require": "./dist/common/ts-module.cjs"
+    "#private/*": {
+      "import": "./dist/es/private/*.js",
+      "require": "./dist/common/private/*.cjs"
     }
   },
   "scripts": {
@@ -57,6 +57,7 @@
     "husky": "8.0.3",
     "jest": "29.6.2",
     "lint-staged": "14.0.0",
+    "nodemon": "3.0.1",
     "prettier": "2.8.8",
     "renamer": "4.0.0",
     "rimraf": "5.0.1",
