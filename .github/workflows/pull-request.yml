@@ -57,7 +57,7 @@ jobs:
         run: | # shell
           cat package.json | jq '.name = "test-project"' > package-rename.json
           mv package-rename.json package.json
-          yarn
+          yarn --no-immutable
 
       - name: Setup Yarn/Git
         run: | # shell
