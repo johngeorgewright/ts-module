@@ -18,3 +18,43 @@ By default, this project's dependencies is kept up-to-date with [renovate](https
 
 1. Remove the `renovate.json` file
 1. `mv .github/.dependabot.yml .github/dependabot.yml`
+
+## ES & CommonJS Modules
+
+This template is designed to help create libraries that produce both ES and CommonJS modules. To ensure that everything works correctly for parent projects, you must never import using local path protocols (IE `./my-module`). Always reference the fully qualified module that you have referenced in the your `package.json`.
+
+```json
+/* package.json */
+{
+  "exports": {
+    "public-module-1": {
+      "import": "./dist/es/public-module-1.js",
+      "require": "./dist/common/public-module-1.cjs"
+    },
+    "public-module-2": {
+      "import": "./dist/es/public-module-2.js",
+      "require": "./dist/common/public-module-2.cjs"
+    }
+  },
+  "imports": {
+    "#private-module": {
+      "import": "./dist/es/private-module.js",
+      "require": "./dist/common/private-module.cjs"
+    }
+  }
+}
+```
+
+```typescript
+// ./src/public-module-1.ts
+import '@johngeorgewright/ts-module/public-module-2'
+```
+
+```typescript
+// ./src/public-module-2.ts
+import '#private-module'
+```
+
+```typescript
+// ./src/private-module.ts
+```
