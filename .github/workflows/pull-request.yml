@@ -62,7 +62,9 @@ jobs:
 
       - name: Build ts-module
         working-directory: ts-module
-        run: yarn build
+        run: | # shell
+          yarn --immutable
+          yarn build
 
       - name: Rename project
         working-directory: test-project
@@ -73,7 +75,7 @@ jobs:
 
       - name: Install ts-module
         working-directory: test-project
-        run: yarn link ../ts-module
+        run: yarn link --private ../ts-module
 
       - name: Test ts-module as an install module
         working-directory: test-project
