@@ -6,15 +6,15 @@
   "type": "module",
   "sideEffects": false,
   "exports": {
-    "*": {
-      "import": "./dist/es/public/*.js",
-      "require": "./dist/common/public/*.cjs"
+    ".": {
+      "import": "./dist/es/index.js",
+      "require": "./dist/common/index.cjs"
     }
   },
   "imports": {
-    "#private/*": {
-      "import": "./dist/es/private/*.js",
-      "require": "./dist/common/private/*.cjs"
+    "#test": {
+      "import": "./dist/es/test.js",
+      "require": "./dist/common/test.cjs"
     }
   },
   "scripts": {
