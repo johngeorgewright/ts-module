@@ -12,9 +12,9 @@
     }
   },
   "imports": {
-    "#test": {
-      "import": "./dist/es/test.js",
-      "require": "./dist/common/test.cjs"
+    "#foo": {
+      "import": "./dist/es/foo.js",
+      "require": "./dist/common/foo.cjs"
     }
   },
   "scripts": {
@@ -23,7 +23,7 @@
     "clean": "rimraf dist",
     "prepare": "husky install",
     "start": "concurrently --names es,common,renamer 'yarn tsc --watch --preserveWatchOutput' 'yarn tsc --watch --preserveWatchOutput --project tsconfig.common.json' \"nodemon --ext js --exec 'yarn build:covertcommonext' --watch dist/common\"",
-    "test": "jest",
+    "test": "node --experimental-vm-modules $(yarn bin jest)",
     "test:coverage": "jest --coverage"
   },
   "repository": {
