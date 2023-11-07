@@ -38,7 +38,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/release-notes-generator", "virtual:88f814a124068bdc4740e859aad4ec1d849b5be1a2e73fe9d27fb2e081860b9472864f073d3387c34e778af219e8b5f23381757469cefcb8753637c931bdace5#npm:11.0.7"],\
             ["@types/node", "npm:18.17.12"],\
             ["@types/semantic-release", "npm:20.0.1"],\
-            ["@types/source-map-support", "npm:0.5.7"],\
+            ["@types/source-map-support", "npm:0.5.10"],\
             ["commitizen", "npm:4.3.0"],\
             ["concurrently", "npm:8.2.1"],\
             ["cz-conventional-changelog", "npm:3.3.0"],\
@@ -462,7 +462,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/release-notes-generator", "virtual:88f814a124068bdc4740e859aad4ec1d849b5be1a2e73fe9d27fb2e081860b9472864f073d3387c34e778af219e8b5f23381757469cefcb8753637c931bdace5#npm:11.0.7"],\
             ["@types/node", "npm:18.17.12"],\
             ["@types/semantic-release", "npm:20.0.1"],\
-            ["@types/source-map-support", "npm:0.5.7"],\
+            ["@types/source-map-support", "npm:0.5.10"],\
             ["commitizen", "npm:4.3.0"],\
             ["concurrently", "npm:8.2.1"],\
             ["cz-conventional-changelog", "npm:3.3.0"],\
@@ -1593,10 +1593,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@types/source-map-support", [\
-        ["npm:0.5.7", {\
-          "packageLocation": "./.yarn/cache/@types-source-map-support-npm-0.5.7-0034838851-6da844f0b8.zip/node_modules/@types/source-map-support/",\
+        ["npm:0.5.10", {\
+          "packageLocation": "./.yarn/cache/@types-source-map-support-npm-0.5.10-99ea057a1d-ef287caea5.zip/node_modules/@types/source-map-support/",\
           "packageDependencies": [\
-            ["@types/source-map-support", "npm:0.5.7"],\
+            ["@types/source-map-support", "npm:0.5.10"],\
             ["source-map", "npm:0.6.1"]\
           ],\
           "linkType": "HARD"\
