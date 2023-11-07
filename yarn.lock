@@ -372,7 +372,7 @@ __metadata:
     "@semantic-release/github": 9.0.4
     "@semantic-release/release-notes-generator": 11.0.7
     "@types/node": 18.17.12
-    "@types/semantic-release": 20.0.1
+    "@types/semantic-release": 20.0.5
     "@types/source-map-support": 0.5.7
     commitizen: 4.3.0
     concurrently: 8.2.1
@@ -1273,12 +1273,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/semantic-release@npm:20.0.1":
-  version: 20.0.1
-  resolution: "@types/semantic-release@npm:20.0.1"
+"@types/semantic-release@npm:20.0.5":
+  version: 20.0.5
+  resolution: "@types/semantic-release@npm:20.0.5"
   dependencies:
     "@types/node": "*"
-  checksum: 40167b7a51ca23e0ac5d1625d390d4d652c856312b4c8b1901fd971858d0d0cb10366fc7f329a536884f2b9844b13978d08a5e82ee3429da9a3b2ee27de3a057
+  checksum: 0f14e43de27d0a773143e7c8b58fe9d334f9927eb5a6ccc8e743f6e77b6aeb94cd9308757837cceac2d1a8e353932fd65cbfa567a39869ab417223cc469d4dc5
   languageName: node
   linkType: hard
 
