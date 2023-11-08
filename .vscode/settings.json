@@ -1,5 +1,5 @@
 {
-  "prettier.prettierPath": ".yarn/sdks/prettier/index.js",
+  "prettier.prettierPath": ".yarn/sdks/prettier/index.cjs",
   "search.exclude": {
     "**/.yarn": true,
     "**/.pnp.*": true
