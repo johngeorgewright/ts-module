@@ -21,40 +21,4 @@ By default, this project's dependencies is kept up-to-date with [renovate](https
 
 ## ES & CommonJS Modules
 
-This template is designed to help create libraries that produce both ES and CommonJS modules. It will create both the CommonJS and ESM distribution files, but to ensure that everything works correctly for parent projects, you must never import using local path protocols (IE `./my-module.js`). Always reference the fully qualified module that you have referenced in the your `package.json`.
-
-```json
-/* package.json */
-{
-  "exports": {
-    ".": {
-      "import": "./dist/es/index.js",
-      "require": "./dist/common/index.cjs"
-    },
-    "./module-2": {
-      "import": "./dist/es/module-2.js",
-      "require": "./dist/common/module-2.cjs"
-    }
-  },
-  "imports": {
-    "#module": {
-      "import": "./dist/es/module.js",
-      "require": "./dist/common/module.cjs"
-    }
-  }
-}
-```
-
-```typescript
-// ./src/index.ts
-import '@johngeorgewright/ts-module/module-2'
-```
-
-```typescript
-// ./src/module-2.ts
-import '#private/module'
-```
-
-```typescript
-// ./src/module.ts
-```
+This template is designed to help create libraries that produce both ES and CommonJS modules. It will create both the CommonJS and ESM distribution files.
