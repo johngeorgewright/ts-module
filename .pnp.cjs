@@ -35,7 +35,7 @@ const RAW_RUNTIME_STATE =
           ["@semantic-release/github", "virtual:88f814a124068bdc4740e859aad4ec1d849b5be1a2e73fe9d27fb2e081860b9472864f073d3387c34e778af219e8b5f23381757469cefcb8753637c931bdace5#npm:9.2.2"],\
           ["@semantic-release/release-notes-generator", "virtual:88f814a124068bdc4740e859aad4ec1d849b5be1a2e73fe9d27fb2e081860b9472864f073d3387c34e778af219e8b5f23381757469cefcb8753637c931bdace5#npm:12.1.0"],\
           ["@types/node", "npm:20.9.0"],\
-          ["@types/semantic-release", "npm:20.0.5"],\
+          ["@types/semantic-release", "npm:20.0.6"],\
           ["@types/source-map-support", "npm:0.5.10"],\
           ["commitizen", "npm:4.3.0"],\
           ["concurrently", "npm:8.2.2"],\
@@ -451,7 +451,7 @@ const RAW_RUNTIME_STATE =
           ["@semantic-release/github", "virtual:88f814a124068bdc4740e859aad4ec1d849b5be1a2e73fe9d27fb2e081860b9472864f073d3387c34e778af219e8b5f23381757469cefcb8753637c931bdace5#npm:9.2.2"],\
           ["@semantic-release/release-notes-generator", "virtual:88f814a124068bdc4740e859aad4ec1d849b5be1a2e73fe9d27fb2e081860b9472864f073d3387c34e778af219e8b5f23381757469cefcb8753637c931bdace5#npm:12.1.0"],\
           ["@types/node", "npm:20.9.0"],\
-          ["@types/semantic-release", "npm:20.0.5"],\
+          ["@types/semantic-release", "npm:20.0.6"],\
           ["@types/source-map-support", "npm:0.5.10"],\
           ["commitizen", "npm:4.3.0"],\
           ["concurrently", "npm:8.2.2"],\
@@ -1211,7 +1211,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/@semantic-release-commit-analyzer-virtual-6a394fae48/0/cache/@semantic-release-commit-analyzer-npm-11.1.0-3004dc9e25-de693f1565.zip/node_modules/@semantic-release/commit-analyzer/",\
         "packageDependencies": [\
           ["@semantic-release/commit-analyzer", "virtual:88f814a124068bdc4740e859aad4ec1d849b5be1a2e73fe9d27fb2e081860b9472864f073d3387c34e778af219e8b5f23381757469cefcb8753637c931bdace5#npm:11.1.0"],\
-          ["@types/semantic-release", "npm:20.0.5"],\
+          ["@types/semantic-release", "npm:20.0.6"],\
           ["conventional-changelog-angular", "npm:7.0.0"],\
           ["conventional-commits-filter", "npm:4.0.0"],\
           ["conventional-commits-parser", "npm:5.0.0"],\
@@ -1257,7 +1257,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@semantic-release/exec", "virtual:88f814a124068bdc4740e859aad4ec1d849b5be1a2e73fe9d27fb2e081860b9472864f073d3387c34e778af219e8b5f23381757469cefcb8753637c931bdace5#npm:6.0.3"],\
           ["@semantic-release/error", "npm:3.0.0"],\
-          ["@types/semantic-release", "npm:20.0.5"],\
+          ["@types/semantic-release", "npm:20.0.6"],\
           ["aggregate-error", "npm:3.1.0"],\
           ["debug", "virtual:4d5b41b4c144bc0f7c0e4c4c2164d0bc5d527811557a2fd7f2ec3307b1cf1ca97f42a730a90b32caada41091b3e922a1e5a2d8c6ff2841b6857305532c68aca8#npm:4.3.2"],\
           ["execa", "npm:5.1.1"],\
@@ -1285,7 +1285,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@semantic-release/git", "virtual:88f814a124068bdc4740e859aad4ec1d849b5be1a2e73fe9d27fb2e081860b9472864f073d3387c34e778af219e8b5f23381757469cefcb8753637c931bdace5#npm:10.0.1"],\
           ["@semantic-release/error", "npm:3.0.0"],\
-          ["@types/semantic-release", "npm:20.0.5"],\
+          ["@types/semantic-release", "npm:20.0.6"],\
           ["aggregate-error", "npm:3.1.0"],\
           ["debug", "virtual:4d5b41b4c144bc0f7c0e4c4c2164d0bc5d527811557a2fd7f2ec3307b1cf1ca97f42a730a90b32caada41091b3e922a1e5a2d8c6ff2841b6857305532c68aca8#npm:4.3.2"],\
           ["dir-glob", "npm:3.0.1"],\
@@ -1355,7 +1355,7 @@ const RAW_RUNTIME_STATE =
           ["@octokit/plugin-retry", "virtual:288aadfeff23d21044b183623e6b676e147dee29ac37c261a5ab72778af4f505c96ba8ef6b4b8467d70edc88d4c3538af2e6d82f912193b928fec9abd0576777#npm:6.0.0"],\
           ["@octokit/plugin-throttling", "virtual:288aadfeff23d21044b183623e6b676e147dee29ac37c261a5ab72778af4f505c96ba8ef6b4b8467d70edc88d4c3538af2e6d82f912193b928fec9abd0576777#npm:8.1.2"],\
           ["@semantic-release/error", "npm:4.0.0"],\
-          ["@types/semantic-release", "npm:20.0.5"],\
+          ["@types/semantic-release", "npm:20.0.6"],\
           ["aggregate-error", "npm:5.0.0"],\
           ["debug", "virtual:9a94018c196e786141d35814b105a6c0107d6a46b41f604ffeb69c93a1920e1c13b55054a16ec44f403ca3b6a5963cb643e070ead395865e72c77dcd518b0500#npm:4.3.4"],\
           ["dir-glob", "npm:3.0.1"],\
@@ -1446,7 +1446,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/@semantic-release-release-notes-generator-virtual-8be7c842c0/0/cache/@semantic-release-release-notes-generator-npm-12.1.0-866cd1b0ca-ff8c5e3b58.zip/node_modules/@semantic-release/release-notes-generator/",\
         "packageDependencies": [\
           ["@semantic-release/release-notes-generator", "virtual:88f814a124068bdc4740e859aad4ec1d849b5be1a2e73fe9d27fb2e081860b9472864f073d3387c34e778af219e8b5f23381757469cefcb8753637c931bdace5#npm:12.1.0"],\
-          ["@types/semantic-release", "npm:20.0.5"],\
+          ["@types/semantic-release", "npm:20.0.6"],\
           ["conventional-changelog-angular", "npm:7.0.0"],\
           ["conventional-changelog-writer", "npm:7.0.1"],\
           ["conventional-commits-filter", "npm:4.0.0"],\
@@ -1642,10 +1642,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/semantic-release", [\
-      ["npm:20.0.5", {\
-        "packageLocation": "./.yarn/cache/@types-semantic-release-npm-20.0.5-b281ac03ff-e34420afea.zip/node_modules/@types/semantic-release/",\
+      ["npm:20.0.6", {\
+        "packageLocation": "./.yarn/cache/@types-semantic-release-npm-20.0.6-da4497e6ad-7e2c186b07.zip/node_modules/@types/semantic-release/",\
         "packageDependencies": [\
-          ["@types/semantic-release", "npm:20.0.5"],\
+          ["@types/semantic-release", "npm:20.0.6"],\
           ["@types/node", "npm:16.7.13"]\
         ],\
         "linkType": "HARD"\
