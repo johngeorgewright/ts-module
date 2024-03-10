@@ -42,7 +42,7 @@ const RAW_RUNTIME_STATE =
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:8.0.3"],\
           ["lint-staged", "npm:15.2.0"],\
-          ["nodemon", "npm:3.0.2"],\
+          ["nodemon", "npm:3.1.0"],\
           ["prettier", "npm:3.1.1"],\
           ["renamer", "npm:4.0.0"],\
           ["rimraf", "npm:5.0.5"],\
@@ -458,7 +458,7 @@ const RAW_RUNTIME_STATE =
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:8.0.3"],\
           ["lint-staged", "npm:15.2.0"],\
-          ["nodemon", "npm:3.0.2"],\
+          ["nodemon", "npm:3.1.0"],\
           ["prettier", "npm:3.1.1"],\
           ["renamer", "npm:4.0.0"],\
           ["rimraf", "npm:5.0.5"],\
@@ -3026,13 +3026,13 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["virtual:4d5b41b4c144bc0f7c0e4c4c2164d0bc5d527811557a2fd7f2ec3307b1cf1ca97f42a730a90b32caada41091b3e922a1e5a2d8c6ff2841b6857305532c68aca8#npm:4.3.2", {\
-        "packageLocation": "./.yarn/__virtual__/debug-virtual-e152771b72/0/cache/debug-npm-4.3.2-f0148b6afe-6a2980374e.zip/node_modules/debug/",\
+      ["virtual:30a475e1a60ca3492fbe4f271713b207b025cbbade4fb3a8423d74bab1331da5ac300d87e0b35da19afbe2e0b8f2d04eda4276cc9e964012b9cc8ea8acb6874a#npm:4.3.4", {\
+        "packageLocation": "./.yarn/__virtual__/debug-virtual-677631df64/0/cache/debug-npm-4.3.4-4513954577-0073c3bcbd.zip/node_modules/debug/",\
         "packageDependencies": [\
-          ["debug", "virtual:4d5b41b4c144bc0f7c0e4c4c2164d0bc5d527811557a2fd7f2ec3307b1cf1ca97f42a730a90b32caada41091b3e922a1e5a2d8c6ff2841b6857305532c68aca8#npm:4.3.2"],\
+          ["debug", "virtual:30a475e1a60ca3492fbe4f271713b207b025cbbade4fb3a8423d74bab1331da5ac300d87e0b35da19afbe2e0b8f2d04eda4276cc9e964012b9cc8ea8acb6874a#npm:4.3.4"],\
           ["@types/supports-color", null],\
           ["ms", "npm:2.1.2"],\
-          ["supports-color", null]\
+          ["supports-color", "npm:5.5.0"]\
         ],\
         "packagePeers": [\
           "@types/supports-color",\
@@ -3040,13 +3040,13 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["virtual:cdcc6f3da7f89f4f693b033af4f99b7f7eb2f3f501c7d5f495b2e59334593feeb573fc7147bf9c632d1fc88514fbaf4f1d948c77e8f525aefbead37e648d68e4#npm:4.3.4", {\
-        "packageLocation": "./.yarn/__virtual__/debug-virtual-ebdf22dbe0/0/cache/debug-npm-4.3.4-4513954577-0073c3bcbd.zip/node_modules/debug/",\
+      ["virtual:4d5b41b4c144bc0f7c0e4c4c2164d0bc5d527811557a2fd7f2ec3307b1cf1ca97f42a730a90b32caada41091b3e922a1e5a2d8c6ff2841b6857305532c68aca8#npm:4.3.2", {\
+        "packageLocation": "./.yarn/__virtual__/debug-virtual-e152771b72/0/cache/debug-npm-4.3.2-f0148b6afe-6a2980374e.zip/node_modules/debug/",\
         "packageDependencies": [\
-          ["debug", "virtual:cdcc6f3da7f89f4f693b033af4f99b7f7eb2f3f501c7d5f495b2e59334593feeb573fc7147bf9c632d1fc88514fbaf4f1d948c77e8f525aefbead37e648d68e4#npm:4.3.4"],\
+          ["debug", "virtual:4d5b41b4c144bc0f7c0e4c4c2164d0bc5d527811557a2fd7f2ec3307b1cf1ca97f42a730a90b32caada41091b3e922a1e5a2d8c6ff2841b6857305532c68aca8#npm:4.3.2"],\
           ["@types/supports-color", null],\
           ["ms", "npm:2.1.2"],\
-          ["supports-color", "npm:5.5.0"]\
+          ["supports-color", null]\
         ],\
         "packagePeers": [\
           "@types/supports-color",\
@@ -5938,12 +5938,12 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["nodemon", [\
-      ["npm:3.0.2", {\
-        "packageLocation": "./.yarn/unplugged/nodemon-npm-3.0.2-cdcc6f3da7/node_modules/nodemon/",\
+      ["npm:3.1.0", {\
+        "packageLocation": "./.yarn/unplugged/nodemon-npm-3.1.0-30a475e1a6/node_modules/nodemon/",\
         "packageDependencies": [\
-          ["nodemon", "npm:3.0.2"],\
+          ["nodemon", "npm:3.1.0"],\
           ["chokidar", "npm:3.5.3"],\
-          ["debug", "virtual:cdcc6f3da7f89f4f693b033af4f99b7f7eb2f3f501c7d5f495b2e59334593feeb573fc7147bf9c632d1fc88514fbaf4f1d948c77e8f525aefbead37e648d68e4#npm:4.3.4"],\
+          ["debug", "virtual:30a475e1a60ca3492fbe4f271713b207b025cbbade4fb3a8423d74bab1331da5ac300d87e0b35da19afbe2e0b8f2d04eda4276cc9e964012b9cc8ea8acb6874a#npm:4.3.4"],\
           ["ignore-by-default", "npm:1.0.1"],\
           ["minimatch", "npm:3.1.2"],\
           ["pstree.remy", "npm:1.1.8"],\
