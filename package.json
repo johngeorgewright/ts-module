@@ -26,8 +26,8 @@
   },
   "homepage": "https://github.com/johngeorgewright/ts-module#readme",
   "devDependencies": {
-    "@commitlint/cli": "19.0.3",
-    "@commitlint/config-conventional": "19.0.3",
+    "@commitlint/cli": "19.1.0",
+    "@commitlint/config-conventional": "19.1.0",
     "@commitlint/types": "19.0.3",
     "@semantic-release/commit-analyzer": "11.1.0",
     "@semantic-release/exec": "6.0.3",
