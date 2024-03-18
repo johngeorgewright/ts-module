@@ -382,7 +382,7 @@ __metadata:
     prettier: "npm:3.2.5"
     renamer: "npm:5.0.0"
     rimraf: "npm:5.0.5"
-    semantic-release: "npm:23.0.4"
+    semantic-release: "npm:23.0.5"
     source-map-support: "npm:0.5.21"
     ts-node: "npm:10.9.2"
     ts-node-test: "npm:0.4.3"
@@ -984,7 +984,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/commit-analyzer@npm:11.1.0, @semantic-release/commit-analyzer@npm:^11.0.0":
+"@semantic-release/commit-analyzer@npm:11.1.0":
   version: 11.1.0
   resolution: "@semantic-release/commit-analyzer@npm:11.1.0"
   dependencies:
@@ -998,6 +998,23 @@ __metadata:
   peerDependencies:
     semantic-release: ">=20.1.0"
   checksum: 10/de693f1565c305c15349a6dceb3d17e62d7f07f36718fd4a9639f6599f1cceeb5255fcb37d8f50b47778aaeb9a2d1e303e8923ef5a7df57b31f2937d1a323085
+  languageName: node
+  linkType: hard
+
+"@semantic-release/commit-analyzer@npm:^12.0.0":
+  version: 12.0.0
+  resolution: "@semantic-release/commit-analyzer@npm:12.0.0"
+  dependencies:
+    conventional-changelog-angular: "npm:^7.0.0"
+    conventional-commits-filter: "npm:^4.0.0"
+    conventional-commits-parser: "npm:^5.0.0"
+    debug: "npm:^4.0.0"
+    import-from-esm: "npm:^1.0.3"
+    lodash-es: "npm:^4.17.21"
+    micromatch: "npm:^4.0.2"
+  peerDependencies:
+    semantic-release: ">=20.1.0"
+  checksum: 10/a095ab4a873d65f497cfebd55966ad441280df34da6d591939e1dffeaa43dd7db10ef5418ae4052f3a9a11492cbe79c35453133d06bc36009600b1d56b39b9c9
   languageName: node
   linkType: hard
 
@@ -6286,11 +6303,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semantic-release@npm:23.0.4":
-  version: 23.0.4
-  resolution: "semantic-release@npm:23.0.4"
+"semantic-release@npm:23.0.5":
+  version: 23.0.5
+  resolution: "semantic-release@npm:23.0.5"
   dependencies:
-    "@semantic-release/commit-analyzer": "npm:^11.0.0"
+    "@semantic-release/commit-analyzer": "npm:^12.0.0"
     "@semantic-release/error": "npm:^4.0.0"
     "@semantic-release/github": "npm:^10.0.0"
     "@semantic-release/npm": "npm:^12.0.0"
@@ -6321,7 +6338,7 @@ __metadata:
     yargs: "npm:^17.5.1"
   bin:
     semantic-release: bin/semantic-release.js
-  checksum: 10/993d8eaef244b72fdc2b4232aacd88b67da3a29dde1232b25f88f36c972fe99f8fa356c6ea1f0fc5a6f195a4619a2169afe33ded2fce9d19126c9e7e9b7c5468
+  checksum: 10/ced735ef120852db3708044b2356dfb884fe227573625a405920a646cfede0f5e758f987aefc125ea81f9b927372847c0f36ccc7bf67af4e1186bf729d6ede53
   languageName: node
   linkType: hard
 
