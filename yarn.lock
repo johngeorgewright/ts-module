@@ -378,7 +378,7 @@ __metadata:
     cz-conventional-changelog: "npm:3.3.0"
     husky: "npm:9.0.11"
     lint-staged: "npm:15.2.5"
-    nodemon: "npm:3.1.2"
+    nodemon: "npm:3.1.3"
     prettier: "npm:3.3.0"
     renamer: "npm:5.0.0"
     rimraf: "npm:5.0.7"
@@ -5213,9 +5213,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nodemon@npm:3.1.2":
-  version: 3.1.2
-  resolution: "nodemon@npm:3.1.2"
+"nodemon@npm:3.1.3":
+  version: 3.1.3
+  resolution: "nodemon@npm:3.1.3"
   dependencies:
     chokidar: "npm:^3.5.2"
     debug: "npm:^4"
@@ -5229,7 +5229,7 @@ __metadata:
     undefsafe: "npm:^2.0.5"
   bin:
     nodemon: bin/nodemon.js
-  checksum: 10/e5a87e42c874f9504fa5740c65692978c1f8444e9250598f167a3d55a90d3189a91790d35b4a2a0991b05d574f2679978449c6190b698a5c6e3f0343b5dfcac0
+  checksum: 10/ad55e76bb755c07b07c05b1b4ea7aca7bdf71bf8c7bfbf2db95e8ddcc964dde5eab9599c9de0db6899db9f2b98e573220f2d3c0796b41865ae754409e557cf50
   languageName: node
   linkType: hard
 
