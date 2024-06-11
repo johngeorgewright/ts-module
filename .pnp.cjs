@@ -45,7 +45,7 @@ const RAW_RUNTIME_STATE =
           ["lint-staged", "npm:15.2.5"],\
           ["nodemon", "npm:3.1.3"],\
           ["prettier", "npm:3.3.2"],\
-          ["renamer", "npm:5.0.0"],\
+          ["renamer", "npm:5.0.1"],\
           ["rimraf", "npm:5.0.7"],\
           ["semantic-release", "npm:23.1.1"],\
           ["source-map-support", "npm:0.5.21"],\
@@ -469,7 +469,7 @@ const RAW_RUNTIME_STATE =
           ["lint-staged", "npm:15.2.5"],\
           ["nodemon", "npm:3.1.3"],\
           ["prettier", "npm:3.3.2"],\
-          ["renamer", "npm:5.0.0"],\
+          ["renamer", "npm:5.0.1"],\
           ["rimraf", "npm:5.0.7"],\
           ["semantic-release", "npm:23.1.1"],\
           ["source-map-support", "npm:0.5.21"],\
@@ -7036,10 +7036,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["renamer", [\
-      ["npm:5.0.0", {\
-        "packageLocation": "./.yarn/cache/renamer-npm-5.0.0-4a3e14e5cf-bee16a0315.zip/node_modules/renamer/",\
+      ["npm:5.0.1", {\
+        "packageLocation": "./.yarn/cache/renamer-npm-5.0.1-29f65843b3-8beaafa7f6.zip/node_modules/renamer/",\
         "packageDependencies": [\
-          ["renamer", "npm:5.0.0"],\
+          ["renamer", "npm:5.0.1"],\
           ["array-back", "npm:6.2.2"],\
           ["chalk", "npm:5.3.0"],\
           ["command-line-args", "npm:5.2.1"],\
