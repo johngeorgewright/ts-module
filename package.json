@@ -1,6 +1,6 @@
 {
   "name": "@johngeorgewright/ts-module",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "description": "TypeScript library template",
   "private": true,
   "type": "module",
