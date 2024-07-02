@@ -5,7 +5,7 @@
   "private": true,
   "type": "module",
   "sideEffects": false,
-  "main": "./dist/common/index.js",
+  "main": "./dist/common/index.cjs",
   "module": "./dist/es/index.js",
   "scripts": {
     "build": "yarn clean && tsc && tsc --project tsconfig.common.json && yarn build:covertcommonext",
