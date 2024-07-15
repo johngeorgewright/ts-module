@@ -6,9 +6,15 @@
   "type": "module",
   "sideEffects": false,
   "main": "./dist/common/index.cjs",
-  "module": "./dist/es/index.js",
+  "exports": {
+    "./foo": {
+      "import": "./dist/es/foo.js",
+      "require": "./dist/common/foo.cjs"
+    }
+  },
   "scripts": {
-    "build": "yarn clean && tsc && tsc --project tsconfig.common.json && yarn build:covertcommonext",
+    "build": "yarn clean && tsc && yarn build:common",
+    "build:common": "tsc --project tsconfig.common.json > /dev/null; yarn build:covertcommonext",
     "build:covertcommonext": "renamer --force --find '/\\.(j|t)s/' --replace '.c$1s' dist/common/**/*",
     "clean": "rimraf dist",
     "prepare": "husky install",
