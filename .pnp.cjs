@@ -42,7 +42,7 @@ const RAW_RUNTIME_STATE =
           ["concurrently", "npm:8.2.2"],\
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.4"],\
-          ["lint-staged", "npm:15.2.8"],\
+          ["lint-staged", "npm:15.2.9"],\
           ["nodemon", "npm:3.1.4"],\
           ["prettier", "npm:3.3.3"],\
           ["renamer", "npm:5.0.2"],\
@@ -683,7 +683,7 @@ const RAW_RUNTIME_STATE =
           ["concurrently", "npm:8.2.2"],\
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.4"],\
-          ["lint-staged", "npm:15.2.8"],\
+          ["lint-staged", "npm:15.2.9"],\
           ["nodemon", "npm:3.1.4"],\
           ["prettier", "npm:3.3.3"],\
           ["renamer", "npm:5.0.2"],\
@@ -3483,6 +3483,20 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
+      ["virtual:092f3073820446e516cc06ce7526276734f4b9f3261d1fcd2126aa21fe567465c65e776307f3da2178400eab74142717a8f1c9e2ee9a38c913fd009cf77e8d00#npm:4.3.6", {\
+        "packageLocation": "./.yarn/__virtual__/debug-virtual-64b81dbdf5/0/cache/debug-npm-4.3.6-ecb233d831-d3adb9af7d.zip/node_modules/debug/",\
+        "packageDependencies": [\
+          ["debug", "virtual:092f3073820446e516cc06ce7526276734f4b9f3261d1fcd2126aa21fe567465c65e776307f3da2178400eab74142717a8f1c9e2ee9a38c913fd009cf77e8d00#npm:4.3.6"],\
+          ["@types/supports-color", null],\
+          ["ms", "npm:2.1.2"],\
+          ["supports-color", null]\
+        ],\
+        "packagePeers": [\
+          "@types/supports-color",\
+          "supports-color"\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["virtual:33f4db03df5cb0a9b65cd83d4a160375f85a7e77735be4fe22ba0f32d7046e6ea2dc2852727ba6ed8ca64f8738f7114c71efc960773f2df5deb72715fe30d8b5#npm:4.3.4", {\
         "packageLocation": "./.yarn/__virtual__/debug-virtual-2383ae041d/0/cache/debug-npm-4.3.4-4513954577-0073c3bcbd.zip/node_modules/debug/",\
         "packageDependencies": [\
@@ -3515,20 +3529,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/debug-virtual-e152771b72/0/cache/debug-npm-4.3.2-f0148b6afe-6a2980374e.zip/node_modules/debug/",\
         "packageDependencies": [\
           ["debug", "virtual:4d5b41b4c144bc0f7c0e4c4c2164d0bc5d527811557a2fd7f2ec3307b1cf1ca97f42a730a90b32caada41091b3e922a1e5a2d8c6ff2841b6857305532c68aca8#npm:4.3.2"],\
-          ["@types/supports-color", null],\
-          ["ms", "npm:2.1.2"],\
-          ["supports-color", null]\
-        ],\
-        "packagePeers": [\
-          "@types/supports-color",\
-          "supports-color"\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["virtual:cf794cd20d1c77a6745012fb3e6893ee787433f2164c2d3c86af728659d28a4502cd44ce93fec4506890f3252dd5b24c2f609b349a0aa1cce1bf098a85ac1fac#npm:4.3.6", {\
-        "packageLocation": "./.yarn/__virtual__/debug-virtual-1c70d8b4d2/0/cache/debug-npm-4.3.6-ecb233d831-d3adb9af7d.zip/node_modules/debug/",\
-        "packageDependencies": [\
-          ["debug", "virtual:cf794cd20d1c77a6745012fb3e6893ee787433f2164c2d3c86af728659d28a4502cd44ce93fec4506890f3252dd5b24c2f609b349a0aa1cce1bf098a85ac1fac#npm:4.3.6"],\
           ["@types/supports-color", null],\
           ["ms", "npm:2.1.2"],\
           ["supports-color", null]\
@@ -5611,13 +5611,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["lint-staged", [\
-      ["npm:15.2.8", {\
-        "packageLocation": "./.yarn/cache/lint-staged-npm-15.2.8-cf794cd20d-cabeb05407.zip/node_modules/lint-staged/",\
+      ["npm:15.2.9", {\
+        "packageLocation": "./.yarn/cache/lint-staged-npm-15.2.9-092f307382-2f7342ca3f.zip/node_modules/lint-staged/",\
         "packageDependencies": [\
-          ["lint-staged", "npm:15.2.8"],\
+          ["lint-staged", "npm:15.2.9"],\
           ["chalk", "npm:5.3.0"],\
           ["commander", "npm:12.1.0"],\
-          ["debug", "virtual:cf794cd20d1c77a6745012fb3e6893ee787433f2164c2d3c86af728659d28a4502cd44ce93fec4506890f3252dd5b24c2f609b349a0aa1cce1bf098a85ac1fac#npm:4.3.6"],\
+          ["debug", "virtual:092f3073820446e516cc06ce7526276734f4b9f3261d1fcd2126aa21fe567465c65e776307f3da2178400eab74142717a8f1c9e2ee9a38c913fd009cf77e8d00#npm:4.3.6"],\
           ["execa", "npm:8.0.1"],\
           ["lilconfig", "npm:3.1.2"],\
           ["listr2", "npm:8.2.4"],\
