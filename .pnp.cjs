@@ -42,7 +42,7 @@ const RAW_RUNTIME_STATE =
           ["concurrently", "npm:8.2.2"],\
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.5"],\
-          ["lint-staged", "npm:15.2.9"],\
+          ["lint-staged", "npm:15.2.10"],\
           ["nodemon", "npm:3.1.4"],\
           ["prettier", "npm:3.3.3"],\
           ["renamer", "npm:5.0.2"],\
@@ -684,7 +684,7 @@ const RAW_RUNTIME_STATE =
           ["concurrently", "npm:8.2.2"],\
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.5"],\
-          ["lint-staged", "npm:15.2.9"],\
+          ["lint-staged", "npm:15.2.10"],\
           ["nodemon", "npm:3.1.4"],\
           ["prettier", "npm:3.3.3"],\
           ["renamer", "npm:5.0.2"],\
@@ -3488,10 +3488,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:092f3073820446e516cc06ce7526276734f4b9f3261d1fcd2126aa21fe567465c65e776307f3da2178400eab74142717a8f1c9e2ee9a38c913fd009cf77e8d00#npm:4.3.6", {\
-        "packageLocation": "./.yarn/__virtual__/debug-virtual-64b81dbdf5/0/cache/debug-npm-4.3.6-ecb233d831-d3adb9af7d.zip/node_modules/debug/",\
+      ["virtual:3374e8211c8552bd058409bb32829cbe46011ae75cade0b7d3d3c8d8aee68ec5a04759a8ab9d63ecd59d990daccdb9f7d444ca14945f7174d7868d5c95c99333#npm:4.3.6", {\
+        "packageLocation": "./.yarn/__virtual__/debug-virtual-6fccd4f6e9/0/cache/debug-npm-4.3.6-ecb233d831-d3adb9af7d.zip/node_modules/debug/",\
         "packageDependencies": [\
-          ["debug", "virtual:092f3073820446e516cc06ce7526276734f4b9f3261d1fcd2126aa21fe567465c65e776307f3da2178400eab74142717a8f1c9e2ee9a38c913fd009cf77e8d00#npm:4.3.6"],\
+          ["debug", "virtual:3374e8211c8552bd058409bb32829cbe46011ae75cade0b7d3d3c8d8aee68ec5a04759a8ab9d63ecd59d990daccdb9f7d444ca14945f7174d7868d5c95c99333#npm:4.3.6"],\
           ["@types/supports-color", null],\
           ["ms", "npm:2.1.2"],\
           ["supports-color", null]\
@@ -5621,17 +5621,17 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["lint-staged", [\
-      ["npm:15.2.9", {\
-        "packageLocation": "./.yarn/cache/lint-staged-npm-15.2.9-092f307382-2f7342ca3f.zip/node_modules/lint-staged/",\
+      ["npm:15.2.10", {\
+        "packageLocation": "./.yarn/cache/lint-staged-npm-15.2.10-3374e8211c-ab6930cd63.zip/node_modules/lint-staged/",\
         "packageDependencies": [\
-          ["lint-staged", "npm:15.2.9"],\
+          ["lint-staged", "npm:15.2.10"],\
           ["chalk", "npm:5.3.0"],\
           ["commander", "npm:12.1.0"],\
-          ["debug", "virtual:092f3073820446e516cc06ce7526276734f4b9f3261d1fcd2126aa21fe567465c65e776307f3da2178400eab74142717a8f1c9e2ee9a38c913fd009cf77e8d00#npm:4.3.6"],\
+          ["debug", "virtual:3374e8211c8552bd058409bb32829cbe46011ae75cade0b7d3d3c8d8aee68ec5a04759a8ab9d63ecd59d990daccdb9f7d444ca14945f7174d7868d5c95c99333#npm:4.3.6"],\
           ["execa", "npm:8.0.1"],\
           ["lilconfig", "npm:3.1.2"],\
           ["listr2", "npm:8.2.4"],\
-          ["micromatch", "npm:4.0.7"],\
+          ["micromatch", "npm:4.0.8"],\
           ["pidtree", "npm:0.6.0"],\
           ["string-argv", "npm:0.3.2"],\
           ["yaml", "npm:2.5.0"]\
@@ -6075,10 +6075,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:4.0.7", {\
-        "packageLocation": "./.yarn/cache/micromatch-npm-4.0.7-28fb7387ee-a11ed1cb67.zip/node_modules/micromatch/",\
+      ["npm:4.0.8", {\
+        "packageLocation": "./.yarn/cache/micromatch-npm-4.0.8-c9570e4aca-6bf2a01672.zip/node_modules/micromatch/",\
         "packageDependencies": [\
-          ["micromatch", "npm:4.0.7"],\
+          ["micromatch", "npm:4.0.8"],\
           ["braces", "npm:3.0.3"],\
           ["picomatch", "npm:2.3.1"]\
         ],\
@@ -9301,7 +9301,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["vite-node", "npm:2.0.5"],\
           ["cac", "npm:6.7.14"],\
-          ["debug", "virtual:092f3073820446e516cc06ce7526276734f4b9f3261d1fcd2126aa21fe567465c65e776307f3da2178400eab74142717a8f1c9e2ee9a38c913fd009cf77e8d00#npm:4.3.6"],\
+          ["debug", "virtual:3374e8211c8552bd058409bb32829cbe46011ae75cade0b7d3d3c8d8aee68ec5a04759a8ab9d63ecd59d990daccdb9f7d444ca14945f7174d7868d5c95c99333#npm:4.3.6"],\
           ["pathe", "npm:1.1.2"],\
           ["tinyrainbow", "npm:1.2.0"],\
           ["vite", "virtual:ec0bec3024247e69d5bba029f4048d6a079e4c027a7bf9456d53326db601f5e87f3a0f0957dfde9beb9985b0c496d1d5bb94c5f61353cfa81ca41e43ea981e06#npm:5.3.2"]\
@@ -9338,7 +9338,7 @@ const RAW_RUNTIME_STATE =
           ["@vitest/ui", null],\
           ["@vitest/utils", "npm:2.0.5"],\
           ["chai", "npm:5.1.1"],\
-          ["debug", "virtual:092f3073820446e516cc06ce7526276734f4b9f3261d1fcd2126aa21fe567465c65e776307f3da2178400eab74142717a8f1c9e2ee9a38c913fd009cf77e8d00#npm:4.3.6"],\
+          ["debug", "virtual:3374e8211c8552bd058409bb32829cbe46011ae75cade0b7d3d3c8d8aee68ec5a04759a8ab9d63ecd59d990daccdb9f7d444ca14945f7174d7868d5c95c99333#npm:4.3.6"],\
           ["execa", "npm:8.0.1"],\
           ["happy-dom", null],\
           ["jsdom", null],\
