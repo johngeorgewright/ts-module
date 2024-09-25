@@ -43,7 +43,7 @@ const RAW_RUNTIME_STATE =
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.6"],\
           ["lint-staged", "npm:15.2.10"],\
-          ["nodemon", "npm:3.1.6"],\
+          ["nodemon", "npm:3.1.7"],\
           ["prettier", "npm:3.3.3"],\
           ["renamer", "npm:5.0.2"],\
           ["rimraf", "npm:6.0.1"],\
@@ -673,7 +673,7 @@ const RAW_RUNTIME_STATE =
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.6"],\
           ["lint-staged", "npm:15.2.10"],\
-          ["nodemon", "npm:3.1.6"],\
+          ["nodemon", "npm:3.1.7"],\
           ["prettier", "npm:3.3.3"],\
           ["renamer", "npm:5.0.2"],\
           ["rimraf", "npm:6.0.1"],\
@@ -3491,20 +3491,6 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["virtual:3747ebc51ad098c5e69860ae97bd76998e86f097a1b3791c74c5353d206530e7fed0bf08bfc363416c7f2fca42cfd765f97ae1fb1e42e681f75af28c7855bce6#npm:4.3.4", {\
-        "packageLocation": "./.yarn/__virtual__/debug-virtual-400003f9a4/0/cache/debug-npm-4.3.4-4513954577-0073c3bcbd.zip/node_modules/debug/",\
-        "packageDependencies": [\
-          ["debug", "virtual:3747ebc51ad098c5e69860ae97bd76998e86f097a1b3791c74c5353d206530e7fed0bf08bfc363416c7f2fca42cfd765f97ae1fb1e42e681f75af28c7855bce6#npm:4.3.4"],\
-          ["@types/supports-color", null],\
-          ["ms", "npm:2.1.2"],\
-          ["supports-color", "npm:5.5.0"]\
-        ],\
-        "packagePeers": [\
-          "@types/supports-color",\
-          "supports-color"\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["virtual:4c64f297d576f2ce0040e3b6e135bfdbf98c431229d7aba781e68e385317ebcc64377cfff1773cdbd65b7ddc65f2d834dc93a8650fef48d3dc6f57c46e40c557#npm:4.3.4", {\
         "packageLocation": "./.yarn/__virtual__/debug-virtual-bc8263be86/0/cache/debug-npm-4.3.4-4513954577-0073c3bcbd.zip/node_modules/debug/",\
         "packageDependencies": [\
@@ -3540,6 +3526,20 @@ const RAW_RUNTIME_STATE =
           ["@types/supports-color", null],\
           ["ms", "npm:2.1.3"],\
           ["supports-color", null]\
+        ],\
+        "packagePeers": [\
+          "@types/supports-color",\
+          "supports-color"\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["virtual:ef864782222c14234d6cc36c8e01c339173d5f5c1fffd31e27bbfa531865c66d04e3701d6f01f3f28b6367aafa01b4560307797646c38c7c3a3e9929f4cc1c21#npm:4.3.4", {\
+        "packageLocation": "./.yarn/__virtual__/debug-virtual-aedb886d45/0/cache/debug-npm-4.3.4-4513954577-0073c3bcbd.zip/node_modules/debug/",\
+        "packageDependencies": [\
+          ["debug", "virtual:ef864782222c14234d6cc36c8e01c339173d5f5c1fffd31e27bbfa531865c66d04e3701d6f01f3f28b6367aafa01b4560307797646c38c7c3a3e9929f4cc1c21#npm:4.3.4"],\
+          ["@types/supports-color", null],\
+          ["ms", "npm:2.1.2"],\
+          ["supports-color", "npm:5.5.0"]\
         ],\
         "packagePeers": [\
           "@types/supports-color",\
@@ -6488,12 +6488,12 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["nodemon", [\
-      ["npm:3.1.6", {\
-        "packageLocation": "./.yarn/unplugged/nodemon-npm-3.1.6-3747ebc51a/node_modules/nodemon/",\
+      ["npm:3.1.7", {\
+        "packageLocation": "./.yarn/unplugged/nodemon-npm-3.1.7-ef86478222/node_modules/nodemon/",\
         "packageDependencies": [\
-          ["nodemon", "npm:3.1.6"],\
+          ["nodemon", "npm:3.1.7"],\
           ["chokidar", "npm:3.5.3"],\
-          ["debug", "virtual:3747ebc51ad098c5e69860ae97bd76998e86f097a1b3791c74c5353d206530e7fed0bf08bfc363416c7f2fca42cfd765f97ae1fb1e42e681f75af28c7855bce6#npm:4.3.4"],\
+          ["debug", "virtual:ef864782222c14234d6cc36c8e01c339173d5f5c1fffd31e27bbfa531865c66d04e3701d6f01f3f28b6367aafa01b4560307797646c38c7c3a3e9929f4cc1c21#npm:4.3.4"],\
           ["ignore-by-default", "npm:1.0.1"],\
           ["minimatch", "npm:3.1.2"],\
           ["pstree.remy", "npm:1.1.8"],\
