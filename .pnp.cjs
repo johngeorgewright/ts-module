@@ -1425,7 +1425,7 @@ const RAW_RUNTIME_STATE =
           ["debug", "virtual:4d5b41b4c144bc0f7c0e4c4c2164d0bc5d527811557a2fd7f2ec3307b1cf1ca97f42a730a90b32caada41091b3e922a1e5a2d8c6ff2841b6857305532c68aca8#npm:4.3.2"],\
           ["import-from-esm", "npm:1.2.0"],\
           ["lodash-es", "npm:4.17.21"],\
-          ["micromatch", "npm:4.0.4"],\
+          ["micromatch", "npm:4.0.8"],\
           ["semantic-release", "npm:24.1.2"]\
         ],\
         "packagePeers": [\
@@ -1446,7 +1446,7 @@ const RAW_RUNTIME_STATE =
           ["debug", "virtual:4d5b41b4c144bc0f7c0e4c4c2164d0bc5d527811557a2fd7f2ec3307b1cf1ca97f42a730a90b32caada41091b3e922a1e5a2d8c6ff2841b6857305532c68aca8#npm:4.3.2"],\
           ["import-from-esm", "npm:1.2.0"],\
           ["lodash-es", "npm:4.17.21"],\
-          ["micromatch", "npm:4.0.4"],\
+          ["micromatch", "npm:4.0.8"],\
           ["semantic-release", "npm:24.1.2"]\
         ],\
         "packagePeers": [\
@@ -1519,7 +1519,7 @@ const RAW_RUNTIME_STATE =
           ["dir-glob", "npm:3.0.1"],\
           ["execa", "npm:5.1.1"],\
           ["lodash", "npm:4.17.21"],\
-          ["micromatch", "npm:4.0.4"],\
+          ["micromatch", "npm:4.0.8"],\
           ["p-reduce", "npm:2.1.0"],\
           ["semantic-release", "npm:24.1.2"]\
         ],\
@@ -3957,7 +3957,7 @@ const RAW_RUNTIME_STATE =
           ["@nodelib/fs.walk", "npm:1.2.8"],\
           ["glob-parent", "npm:5.1.2"],\
           ["merge2", "npm:1.4.1"],\
-          ["micromatch", "npm:4.0.4"]\
+          ["micromatch", "npm:4.0.8"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4121,7 +4121,7 @@ const RAW_RUNTIME_STATE =
           ["findup-sync", "npm:4.0.0"],\
           ["detect-file", "npm:1.0.0"],\
           ["is-glob", "npm:4.0.1"],\
-          ["micromatch", "npm:4.0.4"],\
+          ["micromatch", "npm:4.0.8"],\
           ["resolve-dir", "npm:1.0.1"]\
         ],\
         "linkType": "HARD"\
@@ -6056,15 +6056,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["micromatch", [\
-      ["npm:4.0.4", {\
-        "packageLocation": "./.yarn/cache/micromatch-npm-4.0.4-9fdcbb7a0e-c499da5aad.zip/node_modules/micromatch/",\
-        "packageDependencies": [\
-          ["micromatch", "npm:4.0.4"],\
-          ["braces", "npm:3.0.2"],\
-          ["picomatch", "npm:2.3.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:4.0.8", {\
         "packageLocation": "./.yarn/cache/micromatch-npm-4.0.8-c9570e4aca-6bf2a01672.zip/node_modules/micromatch/",\
         "packageDependencies": [\
@@ -7922,7 +7913,7 @@ const RAW_RUNTIME_STATE =
           ["lodash-es", "npm:4.17.21"],\
           ["marked", "npm:12.0.1"],\
           ["marked-terminal", "virtual:61bdbcb6bfe028d99f6ea2a901afefb5943125af93a79ceb86442ce047936f083d49bf3db3699a10049198f9279d7202ac0ba54ea2b7c6840de8923624492519#npm:7.0.0"],\
-          ["micromatch", "npm:4.0.4"],\
+          ["micromatch", "npm:4.0.8"],\
           ["p-each-series", "npm:3.0.0"],\
           ["p-reduce", "npm:3.0.0"],\
           ["read-package-up", "npm:11.0.0"],\
