@@ -38,7 +38,7 @@ const RAW_RUNTIME_STATE =
           ["@types/node", "npm:20.16.11"],\
           ["@types/semantic-release", "npm:20.0.6"],\
           ["@types/source-map-support", "npm:0.5.10"],\
-          ["commitizen", "npm:4.3.0"],\
+          ["commitizen", "npm:4.3.1"],\
           ["concurrently", "npm:8.2.2"],\
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.6"],\
@@ -668,7 +668,7 @@ const RAW_RUNTIME_STATE =
           ["@types/node", "npm:20.16.11"],\
           ["@types/semantic-release", "npm:20.0.6"],\
           ["@types/source-map-support", "npm:0.5.10"],\
-          ["commitizen", "npm:4.3.0"],\
+          ["commitizen", "npm:4.3.1"],\
           ["concurrently", "npm:8.2.2"],\
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.6"],\
@@ -3095,10 +3095,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:4.3.0", {\
-        "packageLocation": "./.yarn/cache/commitizen-npm-4.3.0-3695cdaf66-45a82b7fde.zip/node_modules/commitizen/",\
+      ["npm:4.3.1", {\
+        "packageLocation": "./.yarn/cache/commitizen-npm-4.3.1-eab8087a7a-3feeb9d235.zip/node_modules/commitizen/",\
         "packageDependencies": [\
-          ["commitizen", "npm:4.3.0"],\
+          ["commitizen", "npm:4.3.1"],\
           ["cachedir", "npm:2.3.0"],\
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["dedent", "npm:0.7.0"],\
