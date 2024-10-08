@@ -35,7 +35,7 @@ const RAW_RUNTIME_STATE =
           ["@semantic-release/git", "virtual:88f814a124068bdc4740e859aad4ec1d849b5be1a2e73fe9d27fb2e081860b9472864f073d3387c34e778af219e8b5f23381757469cefcb8753637c931bdace5#npm:10.0.1"],\
           ["@semantic-release/github", "virtual:88f814a124068bdc4740e859aad4ec1d849b5be1a2e73fe9d27fb2e081860b9472864f073d3387c34e778af219e8b5f23381757469cefcb8753637c931bdace5#npm:10.3.5"],\
           ["@semantic-release/release-notes-generator", "virtual:88f814a124068bdc4740e859aad4ec1d849b5be1a2e73fe9d27fb2e081860b9472864f073d3387c34e778af219e8b5f23381757469cefcb8753637c931bdace5#npm:14.0.1"],\
-          ["@types/node", "npm:20.16.9"],\
+          ["@types/node", "npm:20.16.11"],\
           ["@types/semantic-release", "npm:20.0.6"],\
           ["@types/source-map-support", "npm:0.5.10"],\
           ["commitizen", "npm:4.3.0"],\
@@ -665,7 +665,7 @@ const RAW_RUNTIME_STATE =
           ["@semantic-release/git", "virtual:88f814a124068bdc4740e859aad4ec1d849b5be1a2e73fe9d27fb2e081860b9472864f073d3387c34e778af219e8b5f23381757469cefcb8753637c931bdace5#npm:10.0.1"],\
           ["@semantic-release/github", "virtual:88f814a124068bdc4740e859aad4ec1d849b5be1a2e73fe9d27fb2e081860b9472864f073d3387c34e778af219e8b5f23381757469cefcb8753637c931bdace5#npm:10.3.5"],\
           ["@semantic-release/release-notes-generator", "virtual:88f814a124068bdc4740e859aad4ec1d849b5be1a2e73fe9d27fb2e081860b9472864f073d3387c34e778af219e8b5f23381757469cefcb8753637c931bdace5#npm:14.0.1"],\
-          ["@types/node", "npm:20.16.9"],\
+          ["@types/node", "npm:20.16.11"],\
           ["@types/semantic-release", "npm:20.0.6"],\
           ["@types/source-map-support", "npm:0.5.10"],\
           ["commitizen", "npm:4.3.0"],\
@@ -1930,10 +1930,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:20.16.9", {\
-        "packageLocation": "./.yarn/cache/@types-node-npm-20.16.9-3ebb55959b-cc7e57775c.zip/node_modules/@types/node/",\
+      ["npm:20.16.11", {\
+        "packageLocation": "./.yarn/cache/@types-node-npm-20.16.11-05af3fb874-6d2f92b7b3.zip/node_modules/@types/node/",\
         "packageDependencies": [\
-          ["@types/node", "npm:20.16.9"],\
+          ["@types/node", "npm:20.16.11"],\
           ["undici-types", "npm:6.19.6"]\
         ],\
         "linkType": "HARD"\
@@ -8935,7 +8935,7 @@ const RAW_RUNTIME_STATE =
           ["@tsconfig/node12", "npm:1.0.9"],\
           ["@tsconfig/node14", "npm:1.0.1"],\
           ["@tsconfig/node16", "npm:1.0.2"],\
-          ["@types/node", "npm:20.16.9"],\
+          ["@types/node", "npm:20.16.11"],\
           ["@types/swc__core", null],\
           ["@types/swc__wasm", null],\
           ["@types/typescript", null],\
@@ -9242,7 +9242,7 @@ const RAW_RUNTIME_STATE =
           ["vite", "virtual:daf8cc39ac2407834c71a9b28250d323d91608bf0b008b1089d86b7211a6b2ae788e313262daaae401e7e66105d579bf65585957a28cf10de5455d26c6538c23#npm:5.3.2"],\
           ["@types/less", null],\
           ["@types/lightningcss", null],\
-          ["@types/node", "npm:20.16.9"],\
+          ["@types/node", "npm:20.16.11"],\
           ["@types/sass", null],\
           ["@types/stylus", null],\
           ["@types/sugarss", null],\
@@ -9344,7 +9344,7 @@ const RAW_RUNTIME_STATE =
           ["@types/edge-runtime__vm", null],\
           ["@types/happy-dom", null],\
           ["@types/jsdom", null],\
-          ["@types/node", "npm:20.16.9"],\
+          ["@types/node", "npm:20.16.11"],\
           ["@types/vitest__browser", null],\
           ["@types/vitest__ui", null],\
           ["@vitest/browser", null],\
