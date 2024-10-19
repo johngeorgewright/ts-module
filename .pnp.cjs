@@ -58,11 +58,11 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@75lb/deep-merge", [\
-      ["npm:1.1.1", {\
-        "packageLocation": "./.yarn/cache/@75lb-deep-merge-npm-1.1.1-dc02868387-62f1278180.zip/node_modules/@75lb/deep-merge/",\
+      ["npm:1.1.2", {\
+        "packageLocation": "./.yarn/cache/@75lb-deep-merge-npm-1.1.2-c18da25bc7-e64f8488cc.zip/node_modules/@75lb/deep-merge/",\
         "packageDependencies": [\
-          ["@75lb/deep-merge", "npm:1.1.1"],\
-          ["lodash.assignwith", "npm:4.2.0"],\
+          ["@75lb/deep-merge", "npm:1.1.2"],\
+          ["lodash", "npm:4.17.21"],\
           ["typical", "npm:7.1.1"]\
         ],\
         "linkType": "HARD"\
@@ -5704,15 +5704,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["lodash.assignwith", [\
-      ["npm:4.2.0", {\
-        "packageLocation": "./.yarn/cache/lodash.assignwith-npm-4.2.0-32202f6856-f313e1c9c3.zip/node_modules/lodash.assignwith/",\
-        "packageDependencies": [\
-          ["lodash.assignwith", "npm:4.2.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["lodash.camelcase", [\
       ["npm:4.3.0", {\
         "packageLocation": "./.yarn/cache/lodash.camelcase-npm-4.3.0-bf268e3bf0-c301cc3793.zip/node_modules/lodash.camelcase/",\
@@ -8646,7 +8637,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/table-layout-npm-4.1.0-d9eb195b75-de8b2a5335.zip/node_modules/table-layout/",\
         "packageDependencies": [\
           ["table-layout", "npm:4.1.0"],\
-          ["@75lb/deep-merge", "npm:1.1.1"],\
+          ["@75lb/deep-merge", "npm:1.1.2"],\
           ["array-back", "npm:6.2.2"],\
           ["wordwrapjs", "npm:5.1.0"]\
         ],\
