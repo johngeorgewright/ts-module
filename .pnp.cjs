@@ -39,7 +39,7 @@ const RAW_RUNTIME_STATE =
           ["@types/semantic-release", "npm:20.0.6"],\
           ["@types/source-map-support", "npm:0.5.10"],\
           ["commitizen", "npm:4.3.1"],\
-          ["concurrently", "npm:9.0.1"],\
+          ["concurrently", "npm:9.1.0"],\
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.6"],\
           ["lint-staged", "npm:15.2.10"],\
@@ -659,7 +659,7 @@ const RAW_RUNTIME_STATE =
           ["@types/semantic-release", "npm:20.0.6"],\
           ["@types/source-map-support", "npm:0.5.10"],\
           ["commitizen", "npm:4.3.1"],\
-          ["concurrently", "npm:9.0.1"],\
+          ["concurrently", "npm:9.1.0"],\
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.6"],\
           ["lint-staged", "npm:15.2.10"],\
@@ -3131,10 +3131,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["concurrently", [\
-      ["npm:9.0.1", {\
-        "packageLocation": "./.yarn/cache/concurrently-npm-9.0.1-2e44cbf810-aae80b641c.zip/node_modules/concurrently/",\
+      ["npm:9.1.0", {\
+        "packageLocation": "./.yarn/cache/concurrently-npm-9.1.0-9685d07eeb-9ed158095a.zip/node_modules/concurrently/",\
         "packageDependencies": [\
-          ["concurrently", "npm:9.0.1"],\
+          ["concurrently", "npm:9.1.0"],\
           ["chalk", "npm:4.1.2"],\
           ["lodash", "npm:4.17.21"],\
           ["rxjs", "npm:7.8.1"],\

@@ -45,7 +45,7 @@
     "@types/semantic-release": "20.0.6",
     "@types/source-map-support": "0.5.10",
     "commitizen": "4.3.1",
-    "concurrently": "9.0.1",
+    "concurrently": "9.1.0",
     "cz-conventional-changelog": "3.3.0",
     "husky": "9.1.6",
     "lint-staged": "15.2.10",
