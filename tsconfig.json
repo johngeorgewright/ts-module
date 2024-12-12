@@ -4,19 +4,19 @@
     "esModuleInterop": true,
     "importHelpers": true,
     "incremental": true,
-    "lib": ["ES2023"],
+    "lib": ["ESNext"],
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "noImplicitOverride": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "outDir": "./dist/es",
+    "outDir": "./dist",
     "resolveJsonModule": true,
     "rootDir": "./src",
     "sourceMap": true,
     "strict": true,
-    "target": "ES2023"
+    "target": "ESNext"
   },
   "include": ["src"]
 }

@@ -5,21 +5,15 @@
   "private": true,
   "type": "module",
   "sideEffects": false,
-  "main": "./dist/common/index.cjs",
   "exports": {
-    "./foo": {
-      "import": "./dist/es/foo.js",
-      "require": "./dist/common/foo.cjs"
-    }
+    "./foo": "./dist/foo.js"
   },
   "scripts": {
-    "build": "yarn clean && tsc && yarn build:common",
-    "build:common": "tsc --project tsconfig.common.json > /dev/null; yarn build:covertcommonext",
-    "build:covertcommonext": "renamer --force --find '/\\.(j|t)s/' --replace '.c$1s' dist/common/**/*",
+    "build": "yarn clean && tsc",
     "clean": "rimraf dist",
     "prepare": "husky",
     "start": "concurrently --names es 'yarn tsc --watch --preserveWatchOutput'",
-    "test": "vitest test"
+    "test": "vitest"
   },
   "repository": {
     "type": "git",
@@ -41,14 +35,14 @@
     "@semantic-release/git": "10.0.1",
     "@semantic-release/github": "11.0.1",
     "@semantic-release/release-notes-generator": "14.0.1",
-    "@types/node": "22.10.1",
+    "@types/node": "22.10.2",
     "@types/semantic-release": "20.0.6",
     "@types/source-map-support": "0.5.10",
     "commitizen": "4.3.1",
     "concurrently": "9.1.0",
     "cz-conventional-changelog": "3.3.0",
     "husky": "9.1.7",
-    "lint-staged": "15.2.10",
+    "lint-staged": "15.2.11",
     "nodemon": "3.1.7",
     "prettier": "3.4.2",
     "renamer": "5.0.2",

@@ -1,1 +1,1 @@
-export * from '@johngeorgewright/ts-module/foo'
+export * from './foo.js'

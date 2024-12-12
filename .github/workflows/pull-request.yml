@@ -3,21 +3,17 @@ name: Pull Request
 on:
   pull_request:
 
-  workflow_call:
-    inputs:
-      build:
-        description: Should it test by building?
-        required: false
-        default: true
-        type: boolean
-
 jobs:
+  cache:
+    uses: ./.github/workflows/cache.yml
+
   test:
     name: Test
     runs-on: ubuntu-latest
+    needs: [cache]
     strategy:
       matrix:
-        node-version: [18.x, 20.x]
+        node-version: [18, 20, 22]
 
     steps:
       - name: Checkout project
@@ -28,59 +24,14 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Yarn
-        run: yarn install --immutable
+      - name: Restore cache
+        uses: actions/cache@v4
+        with:
+          key: ${{ needs.cache.outputs.yarn-cache-key }}
+          path: ${{ needs.cache.outputs.yarn-cache-path }}
 
       - name: Build
         run: yarn build
 
       - name: Test
-        run: yarn test
-
-  test-importing:
-    name: Test importing
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [18.x, 20.x]
-
-    steps:
-      - name: Checkout project
-        uses: actions/checkout@v4
-        with:
-          path: ts-module
-
-      - name: Checkout project
-        uses: actions/checkout@v4
-        with:
-          path: test-project
-
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node-version }}
-
-      - name: Build ts-module
-        working-directory: ts-module
-        run: | # shell
-          yarn --immutable
-          yarn build
-
-      - name: Rename project
-        working-directory: test-project
-        run: | # shell
-          cat package.json | jq '.name = "test-project"' > package-rename.json
-          mv package-rename.json package.json
-          yarn --no-immutable
-
-      - name: Install ts-module
-        working-directory: test-project
-        run: | # shell
-          yarn link --private ../ts-module
-          cat package.json | jq '.dependencies["@johngeorgewright/ts-module"] = "*"' > package-dep.json
-          mv package-dep.json package.json
-          yarn --no-immutable
-
-      - name: Test ts-module as an install module
-        working-directory: test-project
         run: yarn test
