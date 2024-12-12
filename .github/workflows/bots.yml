@@ -16,15 +16,24 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           review-message: '@dependabot merge'
 
+  cache:
+    if: github.actor == 'renovate[bot]' || github.actor == 'dependabot[bot]'
+    uses: ./.github/workflows/cache.yml
+
   yarn-sdk:
     name: Rebuild Yarn SDKs
     runs-on: ubuntu-latest
+    needs: [cache]
     if: github.actor == 'renovate[bot]' || github.actor == 'dependabot[bot]'
+    permissions:
+      contents: write
+      pull-requests: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.head.ref }}
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
 
       - name: Use Node.js
         uses: actions/setup-node@v4
@@ -33,28 +42,15 @@ jobs:
 
       - name: Restore cache
         uses: actions/cache@v4
-        id: cache
         with:
-          path: |
-            .yarn/unplugged
-            .yarn/install-state.gz
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-
-      - name: Yarn
-        if: steps.cache.outputs.cache-hit != 'true'
-        run: yarn install --immutable
+          key: ${{ needs.cache.outputs.yarn-cache-key }}
+          path: ${{ needs.cache.outputs.yarn-cache-path }}
 
       - name: Update SDKs
         run: yarn dlx @yarnpkg/sdks
 
-      - name: Commit
-        run: |
-          git config user.name "$(git log -n 1 --pretty=format:%an)"
-          git config user.email "$(git log -n 1 --pretty=format:%ae)"
-          git add .yarn
-
-          if [[ $(git status --short) ]]
-          then
-            git commit -m "chore: rebuild yarn sdks"
-            git push
-          fi
+      - name: Commit & Push changes
+        uses: actions-js/push@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          message: 'chore: yarn sdks'
