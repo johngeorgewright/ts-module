@@ -11,7 +11,7 @@ on:
 jobs:
   keys:
     name: Cache Keys
-    runs-on: dmg-arc-ubuntu
+    runs-on: ubuntu-latest
     outputs:
       yarn: ${{ steps.yarn-cache-key.outputs.value }}
     steps:
@@ -35,7 +35,7 @@ jobs:
   yarn:
     name: Prime Yarn Cache
     needs: [keys]
-    runs-on: dmg-arc-ubuntu
+    runs-on: ubuntu-latest
     env:
       CACHE_PATH: |
         ~/.cache
