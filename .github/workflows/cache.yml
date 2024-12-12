@@ -1,0 +1,67 @@
+name: Cache
+
+on:
+  workflow_call:
+    outputs:
+      yarn-cache-key:
+        value: ${{ jobs.keys.outputs.yarn }}
+      yarn-cache-path:
+        value: ${{ jobs.yarn.outputs.cache-path }}
+
+jobs:
+  keys:
+    name: Cache Keys
+    runs-on: ubuntu-latest
+    outputs:
+      yarn: ${{ steps.yarn-cache-key.outputs.value }}
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        id: node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+
+      - name: Install Yarn
+        id: yarn
+        run: echo "version=$(yarn --version)" >> $GITHUB_OUTPUT
+
+      - name: Yarn Cache Key
+        id: yarn-cache-key
+        run: echo "value=${{ runner.os }}-node-${{ steps.node.outputs.node-version }}-yarn-${{ steps.yarn.outputs.version }}-${{ hashFiles('**/yarn.lock') }}" >> $GITHUB_OUTPUT
+
+  yarn:
+    name: Prime Yarn Cache
+    needs: [keys]
+    runs-on: ubuntu-latest
+    env:
+      CACHE_PATH: |
+        ~/.cache
+        .yarn/unplugged
+        .yarn/install-state.gz
+    concurrency:
+      group: ${{ needs.keys.outputs.yarn }}
+    outputs:
+      cache-path: ${{ env.CACHE_PATH }}
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        id: node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+
+      - name: Cache
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ env.CACHE_PATH }}
+          key: ${{ needs.keys.outputs.yarn }}
+
+      - name: Yarn
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: yarn --immutable
