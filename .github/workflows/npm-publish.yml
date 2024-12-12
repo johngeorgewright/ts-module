@@ -16,7 +16,7 @@ jobs:
       - name: Checkout project
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.PUSH_TOKEN }}
+          token: ${{ secrets.GH_TOKEN }}
 
       - name: Install Node.js
         uses: actions/setup-node@v4
@@ -43,5 +43,5 @@ jobs:
       - name: Release
         run: yarn semantic-release
         env:
-          GITHUB_TOKEN: ${{ secrets.PUSH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
