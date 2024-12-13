@@ -43,7 +43,7 @@ const RAW_RUNTIME_STATE =
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.7"],\
           ["lint-staged", "npm:15.2.11"],\
-          ["nodemon", "npm:3.1.7"],\
+          ["nodemon", "npm:3.1.9"],\
           ["prettier", "npm:3.4.2"],\
           ["renamer", "npm:5.0.2"],\
           ["rimraf", "npm:6.0.1"],\
@@ -663,7 +663,7 @@ const RAW_RUNTIME_STATE =
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.7"],\
           ["lint-staged", "npm:15.2.11"],\
-          ["nodemon", "npm:3.1.7"],\
+          ["nodemon", "npm:3.1.9"],\
           ["prettier", "npm:3.4.2"],\
           ["renamer", "npm:5.0.2"],\
           ["rimraf", "npm:6.0.1"],\
@@ -3512,10 +3512,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["virtual:ef864782222c14234d6cc36c8e01c339173d5f5c1fffd31e27bbfa531865c66d04e3701d6f01f3f28b6367aafa01b4560307797646c38c7c3a3e9929f4cc1c21#npm:4.3.4", {\
-        "packageLocation": "./.yarn/__virtual__/debug-virtual-aedb886d45/0/cache/debug-npm-4.3.4-4513954577-0073c3bcbd.zip/node_modules/debug/",\
+      ["virtual:f1382c554182f9e1abb3745e34e5163637ebd3c611df77e82da38f1ec9964f1d016765e440e68141eed073069546eb468a3a6ce4bd0b2b99cbf6baa9d7635af7#npm:4.3.4", {\
+        "packageLocation": "./.yarn/__virtual__/debug-virtual-5da3b4b5c9/0/cache/debug-npm-4.3.4-4513954577-0073c3bcbd.zip/node_modules/debug/",\
         "packageDependencies": [\
-          ["debug", "virtual:ef864782222c14234d6cc36c8e01c339173d5f5c1fffd31e27bbfa531865c66d04e3701d6f01f3f28b6367aafa01b4560307797646c38c7c3a3e9929f4cc1c21#npm:4.3.4"],\
+          ["debug", "virtual:f1382c554182f9e1abb3745e34e5163637ebd3c611df77e82da38f1ec9964f1d016765e440e68141eed073069546eb468a3a6ce4bd0b2b99cbf6baa9d7635af7#npm:4.3.4"],\
           ["@types/supports-color", null],\
           ["ms", "npm:2.1.2"],\
           ["supports-color", "npm:5.5.0"]\
@@ -6483,12 +6483,12 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["nodemon", [\
-      ["npm:3.1.7", {\
-        "packageLocation": "./.yarn/unplugged/nodemon-npm-3.1.7-ef86478222/node_modules/nodemon/",\
+      ["npm:3.1.9", {\
+        "packageLocation": "./.yarn/unplugged/nodemon-npm-3.1.9-f1382c5541/node_modules/nodemon/",\
         "packageDependencies": [\
-          ["nodemon", "npm:3.1.7"],\
+          ["nodemon", "npm:3.1.9"],\
           ["chokidar", "npm:3.5.3"],\
-          ["debug", "virtual:ef864782222c14234d6cc36c8e01c339173d5f5c1fffd31e27bbfa531865c66d04e3701d6f01f3f28b6367aafa01b4560307797646c38c7c3a3e9929f4cc1c21#npm:4.3.4"],\
+          ["debug", "virtual:f1382c554182f9e1abb3745e34e5163637ebd3c611df77e82da38f1ec9964f1d016765e440e68141eed073069546eb468a3a6ce4bd0b2b99cbf6baa9d7635af7#npm:4.3.4"],\
           ["ignore-by-default", "npm:1.0.1"],\
           ["minimatch", "npm:3.1.2"],\
           ["pstree.remy", "npm:1.1.8"],\
