@@ -39,7 +39,7 @@ const RAW_RUNTIME_STATE =
           ["@types/semantic-release", "npm:20.0.6"],\
           ["@types/source-map-support", "npm:0.5.10"],\
           ["commitizen", "npm:4.3.1"],\
-          ["concurrently", "npm:9.1.1"],\
+          ["concurrently", "npm:9.1.2"],\
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.7"],\
           ["lint-staged", "npm:15.3.0"],\
@@ -659,7 +659,7 @@ const RAW_RUNTIME_STATE =
           ["@types/semantic-release", "npm:20.0.6"],\
           ["@types/source-map-support", "npm:0.5.10"],\
           ["commitizen", "npm:4.3.1"],\
-          ["concurrently", "npm:9.1.1"],\
+          ["concurrently", "npm:9.1.2"],\
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.7"],\
           ["lint-staged", "npm:15.3.0"],\
@@ -3152,10 +3152,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["concurrently", [\
-      ["npm:9.1.1", {\
-        "packageLocation": "./.yarn/cache/concurrently-npm-9.1.1-8d14dddd33-fdf01f8910.zip/node_modules/concurrently/",\
+      ["npm:9.1.2", {\
+        "packageLocation": "./.yarn/cache/concurrently-npm-9.1.2-3c33290b4e-52f20653db.zip/node_modules/concurrently/",\
         "packageDependencies": [\
-          ["concurrently", "npm:9.1.1"],\
+          ["concurrently", "npm:9.1.2"],\
           ["chalk", "npm:4.1.2"],\
           ["lodash", "npm:4.17.21"],\
           ["rxjs", "npm:7.8.1"],\
@@ -15325,18 +15325,20 @@ Require stack:
     }
     return false;
   };
-  const originalExtensionJSFunction = require$$0.Module._extensions[`.js`];
-  require$$0.Module._extensions[`.js`] = function(module, filename) {
-    if (filename.endsWith(`.js`)) {
-      const pkg = readPackageScope(filename);
-      if (pkg && pkg.data?.type === `module`) {
-        const err = ERR_REQUIRE_ESM(filename, module.parent?.filename);
-        Error.captureStackTrace(err);
-        throw err;
+  if (!process.features.require_module) {
+    const originalExtensionJSFunction = require$$0.Module._extensions[`.js`];
+    require$$0.Module._extensions[`.js`] = function(module, filename) {
+      if (filename.endsWith(`.js`)) {
+        const pkg = readPackageScope(filename);
+        if (pkg && pkg.data?.type === `module`) {
+          const err = ERR_REQUIRE_ESM(filename, module.parent?.filename);
+          Error.captureStackTrace(err);
+          throw err;
+        }
       }
-    }
-    originalExtensionJSFunction.call(this, module, filename);
-  };
+      originalExtensionJSFunction.call(this, module, filename);
+    };
+  }
   const originalDlopen = process.dlopen;
   process.dlopen = function(...args) {
     const [module, filename, ...rest] = args;
