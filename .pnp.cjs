@@ -42,7 +42,7 @@ const RAW_RUNTIME_STATE =
           ["concurrently", "npm:9.1.2"],\
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.7"],\
-          ["lint-staged", "npm:15.4.1"],\
+          ["lint-staged", "npm:15.4.2"],\
           ["nodemon", "npm:3.1.9"],\
           ["prettier", "npm:3.4.2"],\
           ["renamer", "npm:5.0.2"],\
@@ -662,7 +662,7 @@ const RAW_RUNTIME_STATE =
           ["concurrently", "npm:9.1.2"],\
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.7"],\
-          ["lint-staged", "npm:15.4.1"],\
+          ["lint-staged", "npm:15.4.2"],\
           ["nodemon", "npm:3.1.9"],\
           ["prettier", "npm:3.4.2"],\
           ["renamer", "npm:5.0.2"],\
@@ -3077,10 +3077,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["commander", [\
-      ["npm:12.1.0", {\
-        "packageLocation": "./.yarn/cache/commander-npm-12.1.0-65c868e907-cdaeb672d9.zip/node_modules/commander/",\
+      ["npm:13.1.0", {\
+        "packageLocation": "./.yarn/cache/commander-npm-13.1.0-bdbbfaaf9d-d3b4b79e6b.zip/node_modules/commander/",\
         "packageDependencies": [\
-          ["commander", "npm:12.1.0"]\
+          ["commander", "npm:13.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3477,6 +3477,20 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
+      ["virtual:1172738fea2f971a44a2bf577981d6963fb4c0f4afcf9ebe86174d36c48cb1cdee1e17ba2c8dbadf57e7389fe1b6c3248c2424e3d017898833b988c5a2cb4739#npm:4.4.0", {\
+        "packageLocation": "./.yarn/__virtual__/debug-virtual-ef6230ed47/0/cache/debug-npm-4.4.0-f6efe76023-1847944c2e.zip/node_modules/debug/",\
+        "packageDependencies": [\
+          ["debug", "virtual:1172738fea2f971a44a2bf577981d6963fb4c0f4afcf9ebe86174d36c48cb1cdee1e17ba2c8dbadf57e7389fe1b6c3248c2424e3d017898833b988c5a2cb4739#npm:4.4.0"],\
+          ["@types/supports-color", null],\
+          ["ms", "npm:2.1.3"],\
+          ["supports-color", null]\
+        ],\
+        "packagePeers": [\
+          "@types/supports-color",\
+          "supports-color"\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["virtual:4d5b41b4c144bc0f7c0e4c4c2164d0bc5d527811557a2fd7f2ec3307b1cf1ca97f42a730a90b32caada41091b3e922a1e5a2d8c6ff2841b6857305532c68aca8#npm:4.3.2", {\
         "packageLocation": "./.yarn/__virtual__/debug-virtual-e152771b72/0/cache/debug-npm-4.3.2-f0148b6afe-6a2980374e.zip/node_modules/debug/",\
         "packageDependencies": [\
@@ -3497,20 +3511,6 @@ const RAW_RUNTIME_STATE =
           ["debug", "virtual:8866147795d308091c464175a42e9db9c8525e58f8ee83ac382b2a6d7dfca9f0262a439c98e1e6c97839fb23bdce1374c6611813b5e2e1c7d2aa725e24e64d29#npm:4.3.4"],\
           ["@types/supports-color", null],\
           ["ms", "npm:2.1.2"],\
-          ["supports-color", null]\
-        ],\
-        "packagePeers": [\
-          "@types/supports-color",\
-          "supports-color"\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["virtual:8d0a5b99329d7c1ebcc1ebbf583e80007b908d1d310dabee279d43ca32eda8675df64c2302a1e5d44830697e5d1993f13be790053e01e3170776efabef51f972#npm:4.4.0", {\
-        "packageLocation": "./.yarn/__virtual__/debug-virtual-5f939f0f1b/0/cache/debug-npm-4.4.0-f6efe76023-1847944c2e.zip/node_modules/debug/",\
-        "packageDependencies": [\
-          ["debug", "virtual:8d0a5b99329d7c1ebcc1ebbf583e80007b908d1d310dabee279d43ca32eda8675df64c2302a1e5d44830697e5d1993f13be790053e01e3170776efabef51f972#npm:4.4.0"],\
-          ["@types/supports-color", null],\
-          ["ms", "npm:2.1.3"],\
           ["supports-color", null]\
         ],\
         "packagePeers": [\
@@ -5650,20 +5650,20 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["lint-staged", [\
-      ["npm:15.4.1", {\
-        "packageLocation": "./.yarn/cache/lint-staged-npm-15.4.1-8d0a5b9932-615a1f0a66.zip/node_modules/lint-staged/",\
+      ["npm:15.4.2", {\
+        "packageLocation": "./.yarn/cache/lint-staged-npm-15.4.2-1172738fea-19f85db74d.zip/node_modules/lint-staged/",\
         "packageDependencies": [\
-          ["lint-staged", "npm:15.4.1"],\
+          ["lint-staged", "npm:15.4.2"],\
           ["chalk", "npm:5.4.1"],\
-          ["commander", "npm:12.1.0"],\
-          ["debug", "virtual:8d0a5b99329d7c1ebcc1ebbf583e80007b908d1d310dabee279d43ca32eda8675df64c2302a1e5d44830697e5d1993f13be790053e01e3170776efabef51f972#npm:4.4.0"],\
+          ["commander", "npm:13.1.0"],\
+          ["debug", "virtual:1172738fea2f971a44a2bf577981d6963fb4c0f4afcf9ebe86174d36c48cb1cdee1e17ba2c8dbadf57e7389fe1b6c3248c2424e3d017898833b988c5a2cb4739#npm:4.4.0"],\
           ["execa", "npm:8.0.1"],\
           ["lilconfig", "npm:3.1.3"],\
           ["listr2", "npm:8.2.5"],\
           ["micromatch", "npm:4.0.8"],\
           ["pidtree", "npm:0.6.0"],\
           ["string-argv", "npm:0.3.2"],\
-          ["yaml", "npm:2.6.1"]\
+          ["yaml", "npm:2.7.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -9601,10 +9601,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:2.6.1", {\
-        "packageLocation": "./.yarn/cache/yaml-npm-2.6.1-eb747069e9-cf412f03a3.zip/node_modules/yaml/",\
+      ["npm:2.7.0", {\
+        "packageLocation": "./.yarn/cache/yaml-npm-2.7.0-bb348b356b-c8c314c62f.zip/node_modules/yaml/",\
         "packageDependencies": [\
-          ["yaml", "npm:2.6.1"]\
+          ["yaml", "npm:2.7.0"]\
         ],\
         "linkType": "HARD"\
       }]\
