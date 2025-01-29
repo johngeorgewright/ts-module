@@ -6,7 +6,7 @@ on:
 
 jobs:
   cache:
-    uses: ./.github/workflows/cache.yml
+    uses: johngeorgewright/workflows/.github/workflows/yarn-cache.yml@main
 
   publish-npm:
     name: NPM
@@ -31,8 +31,8 @@ jobs:
       - name: Restore cache
         uses: actions/cache@v4
         with:
-          key: ${{ needs.cache.outputs.yarn-cache-key }}
-          path: ${{ needs.cache.outputs.yarn-cache-path }}
+          key: ${{ needs.cache.outputs.key }}
+          path: ${{ needs.cache.outputs.path }}
 
       - name: Build
         run: yarn build
