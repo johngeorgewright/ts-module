@@ -6,7 +6,7 @@
   "type": "module",
   "sideEffects": false,
   "exports": {
-    "./foo": "./dist/foo.js"
+    ".": "./dist/index.js"
   },
   "scripts": {
     "build": "yarn clean && tsc",
