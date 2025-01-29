@@ -2025,7 +2025,7 @@ const RAW_RUNTIME_STATE =
           ["estree-walker", "npm:3.0.3"],\
           ["magic-string", "npm:0.30.12"],\
           ["msw", null],\
-          ["vite", "virtual:63fd841035f6fba8eec739beb9713c60fcbdd57b53160857f6a43f87bf7bee1d786c71d1a5d47d928065610357f5e149d618dae27322afdb8f476997accf62b4#npm:5.4.11"]\
+          ["vite", "virtual:63fd841035f6fba8eec739beb9713c60fcbdd57b53160857f6a43f87bf7bee1d786c71d1a5d47d928065610357f5e149d618dae27322afdb8f476997accf62b4#npm:5.4.14"]\
         ],\
         "packagePeers": [\
           "@types/msw",\
@@ -9236,17 +9236,17 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["vite", [\
-      ["npm:5.4.11", {\
-        "packageLocation": "./.yarn/cache/vite-npm-5.4.11-9da365ef2b-719c4dea89.zip/node_modules/vite/",\
+      ["npm:5.4.14", {\
+        "packageLocation": "./.yarn/cache/vite-npm-5.4.14-4903607bfe-ce382f4059.zip/node_modules/vite/",\
         "packageDependencies": [\
-          ["vite", "npm:5.4.11"]\
+          ["vite", "npm:5.4.14"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:63fd841035f6fba8eec739beb9713c60fcbdd57b53160857f6a43f87bf7bee1d786c71d1a5d47d928065610357f5e149d618dae27322afdb8f476997accf62b4#npm:5.4.11", {\
-        "packageLocation": "./.yarn/__virtual__/vite-virtual-a68e09cc24/0/cache/vite-npm-5.4.11-9da365ef2b-719c4dea89.zip/node_modules/vite/",\
+      ["virtual:63fd841035f6fba8eec739beb9713c60fcbdd57b53160857f6a43f87bf7bee1d786c71d1a5d47d928065610357f5e149d618dae27322afdb8f476997accf62b4#npm:5.4.14", {\
+        "packageLocation": "./.yarn/__virtual__/vite-virtual-ffe688c976/0/cache/vite-npm-5.4.14-4903607bfe-ce382f4059.zip/node_modules/vite/",\
         "packageDependencies": [\
-          ["vite", "virtual:63fd841035f6fba8eec739beb9713c60fcbdd57b53160857f6a43f87bf7bee1d786c71d1a5d47d928065610357f5e149d618dae27322afdb8f476997accf62b4#npm:5.4.11"],\
+          ["vite", "virtual:63fd841035f6fba8eec739beb9713c60fcbdd57b53160857f6a43f87bf7bee1d786c71d1a5d47d928065610357f5e149d618dae27322afdb8f476997accf62b4#npm:5.4.14"],\
           ["@types/less", null],\
           ["@types/lightningcss", null],\
           ["@types/node", "npm:22.12.0"],\
@@ -9286,10 +9286,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["virtual:ab9d2b7124648229fade39d55911bd90a228e95a37b9487cfcd1a4f2af59e4acce805bd57dc55af28e9863e5f825ddfb903fa9606a7f562a0fda3448bd71b6d9#npm:5.4.11", {\
-        "packageLocation": "./.yarn/__virtual__/vite-virtual-a5f94414d1/0/cache/vite-npm-5.4.11-9da365ef2b-719c4dea89.zip/node_modules/vite/",\
+      ["virtual:ab9d2b7124648229fade39d55911bd90a228e95a37b9487cfcd1a4f2af59e4acce805bd57dc55af28e9863e5f825ddfb903fa9606a7f562a0fda3448bd71b6d9#npm:5.4.14", {\
+        "packageLocation": "./.yarn/__virtual__/vite-virtual-20661d80ec/0/cache/vite-npm-5.4.14-4903607bfe-ce382f4059.zip/node_modules/vite/",\
         "packageDependencies": [\
-          ["vite", "virtual:ab9d2b7124648229fade39d55911bd90a228e95a37b9487cfcd1a4f2af59e4acce805bd57dc55af28e9863e5f825ddfb903fa9606a7f562a0fda3448bd71b6d9#npm:5.4.11"],\
+          ["vite", "virtual:ab9d2b7124648229fade39d55911bd90a228e95a37b9487cfcd1a4f2af59e4acce805bd57dc55af28e9863e5f825ddfb903fa9606a7f562a0fda3448bd71b6d9#npm:5.4.14"],\
           ["@types/less", null],\
           ["@types/lightningcss", null],\
           ["@types/node", null],\
@@ -9339,7 +9339,7 @@ const RAW_RUNTIME_STATE =
           ["debug", "virtual:ab9d2b7124648229fade39d55911bd90a228e95a37b9487cfcd1a4f2af59e4acce805bd57dc55af28e9863e5f825ddfb903fa9606a7f562a0fda3448bd71b6d9#npm:4.3.7"],\
           ["es-module-lexer", "npm:1.5.4"],\
           ["pathe", "npm:1.1.2"],\
-          ["vite", "virtual:ab9d2b7124648229fade39d55911bd90a228e95a37b9487cfcd1a4f2af59e4acce805bd57dc55af28e9863e5f825ddfb903fa9606a7f562a0fda3448bd71b6d9#npm:5.4.11"]\
+          ["vite", "virtual:ab9d2b7124648229fade39d55911bd90a228e95a37b9487cfcd1a4f2af59e4acce805bd57dc55af28e9863e5f825ddfb903fa9606a7f562a0fda3448bd71b6d9#npm:5.4.14"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -9384,7 +9384,7 @@ const RAW_RUNTIME_STATE =
           ["tinyexec", "npm:0.3.1"],\
           ["tinypool", "npm:1.0.1"],\
           ["tinyrainbow", "npm:1.2.0"],\
-          ["vite", "virtual:63fd841035f6fba8eec739beb9713c60fcbdd57b53160857f6a43f87bf7bee1d786c71d1a5d47d928065610357f5e149d618dae27322afdb8f476997accf62b4#npm:5.4.11"],\
+          ["vite", "virtual:63fd841035f6fba8eec739beb9713c60fcbdd57b53160857f6a43f87bf7bee1d786c71d1a5d47d928065610357f5e149d618dae27322afdb8f476997accf62b4#npm:5.4.14"],\
           ["vite-node", "npm:2.1.8"],\
           ["why-is-node-running", "npm:2.3.0"]\
         ],\
