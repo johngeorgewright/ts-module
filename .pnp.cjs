@@ -1036,11 +1036,11 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@octokit/endpoint", [\
-      ["npm:10.0.0", {\
-        "packageLocation": "./.yarn/cache/@octokit-endpoint-npm-10.0.0-7cb552d0bd-a73a349920.zip/node_modules/@octokit/endpoint/",\
+      ["npm:10.1.3", {\
+        "packageLocation": "./.yarn/cache/@octokit-endpoint-npm-10.1.3-8c56837c60-22a03e106e.zip/node_modules/@octokit/endpoint/",\
         "packageDependencies": [\
-          ["@octokit/endpoint", "npm:10.0.0"],\
-          ["@octokit/types", "npm:12.2.0"],\
+          ["@octokit/endpoint", "npm:10.1.3"],\
+          ["@octokit/types", "npm:13.8.0"],\
           ["universal-user-agent", "npm:7.0.2"]\
         ],\
         "linkType": "HARD"\
@@ -1077,6 +1077,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@octokit-openapi-types-npm-22.2.0-ce9f704019-0471b0c789.zip/node_modules/@octokit/openapi-types/",\
         "packageDependencies": [\
           ["@octokit/openapi-types", "npm:22.2.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:23.0.1", {\
+        "packageLocation": "./.yarn/cache/@octokit-openapi-types-npm-23.0.1-9110a4ae43-2647ae16bc.zip/node_modules/@octokit/openapi-types/",\
+        "packageDependencies": [\
+          ["@octokit/openapi-types", "npm:23.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1158,7 +1165,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@octokit-request-npm-9.0.1-b76783150d-428e27ca11.zip/node_modules/@octokit/request/",\
         "packageDependencies": [\
           ["@octokit/request", "npm:9.0.1"],\
-          ["@octokit/endpoint", "npm:10.0.0"],\
+          ["@octokit/endpoint", "npm:10.1.3"],\
           ["@octokit/request-error", "npm:6.0.2"],\
           ["@octokit/types", "npm:12.2.0"],\
           ["universal-user-agent", "npm:7.0.2"]\
@@ -1198,6 +1205,14 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@octokit/types", "npm:13.5.0"],\
           ["@octokit/openapi-types", "npm:22.2.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:13.8.0", {\
+        "packageLocation": "./.yarn/cache/@octokit-types-npm-13.8.0-e28e37c196-7f260cd3f9.zip/node_modules/@octokit/types/",\
+        "packageDependencies": [\
+          ["@octokit/types", "npm:13.8.0"],\
+          ["@octokit/openapi-types", "npm:23.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -10122,7 +10137,7 @@ async function copyImpl(prelayout, postlayout, destinationFs, destination, sourc
 async function maybeLStat(baseFs, p) {
   try {
     return await baseFs.lstatPromise(p);
-  } catch (e) {
+  } catch {
     return null;
   }
 }
@@ -10381,7 +10396,7 @@ class CustomStatWatcher extends events.EventEmitter {
   stat() {
     try {
       return this.fakeFs.statSync(this.path, { bigint: this.bigint });
-    } catch (error) {
+    } catch {
       const statInstance = this.bigint ? new BigIntStatsEntry() : new StatEntry();
       return clearStats(statInstance);
     }
@@ -10707,7 +10722,7 @@ class FakeFS {
     let current = Buffer.alloc(0);
     try {
       current = await this.readFilePromise(p);
-    } catch (error) {
+    } catch {
     }
     if (Buffer.compare(current, content) === 0)
       return;
@@ -10717,7 +10732,7 @@ class FakeFS {
     let current = ``;
     try {
       current = await this.readFilePromise(p, `utf8`);
-    } catch (error) {
+    } catch {
     }
     const normalizedContent = automaticNewlines ? normalizeLineEndings(current, content) : content;
     if (current === normalizedContent)
@@ -10735,7 +10750,7 @@ class FakeFS {
     let current = Buffer.alloc(0);
     try {
       current = this.readFileSync(p);
-    } catch (error) {
+    } catch {
     }
     if (Buffer.compare(current, content) === 0)
       return;
@@ -10745,7 +10760,7 @@ class FakeFS {
     let current = ``;
     try {
       current = this.readFileSync(p, `utf8`);
-    } catch (error) {
+    } catch {
     }
     const normalizedContent = automaticNewlines ? normalizeLineEndings(current, content) : content;
     if (current === normalizedContent)
@@ -10785,13 +10800,13 @@ class FakeFS {
       let pid;
       try {
         [pid] = await this.readJsonPromise(lockPath);
-      } catch (error) {
+      } catch {
         return Date.now() - startTime < 500;
       }
       try {
         process.kill(pid, 0);
         return true;
-      } catch (error) {
+      } catch {
         return false;
       }
     };
@@ -10804,7 +10819,7 @@ class FakeFS {
             try {
               await this.unlinkPromise(lockPath);
               continue;
-            } catch (error2) {
+            } catch {
             }
           }
           if (Date.now() - startTime < 60 * 1e3) {
@@ -10824,7 +10839,7 @@ class FakeFS {
       try {
         await this.closePromise(fd);
         await this.unlinkPromise(lockPath);
-      } catch (error) {
+      } catch {
       }
     }
   }
@@ -11974,7 +11989,7 @@ class MountFS extends BasePortableFakeFS {
       let content;
       try {
         content = await sourceFs.readFilePromise(sourceP2);
-      } catch (error) {
+      } catch {
         throw Object.assign(new Error(`EINVAL: invalid argument, copyfile '${sourceP2}' -> '${destP2}'`), { code: `EINVAL` });
       }
       await destFs.writeFilePromise(destP2, content);
@@ -12006,7 +12021,7 @@ class MountFS extends BasePortableFakeFS {
       let content;
       try {
         content = sourceFs.readFileSync(sourceP2);
-      } catch (error) {
+      } catch {
         throw Object.assign(new Error(`EINVAL: invalid argument, copyfile '${sourceP2}' -> '${destP2}'`), { code: `EINVAL` });
       }
       destFs.writeFileSync(destP2, content);
@@ -12921,7 +12936,7 @@ function patchFs(patchedFs, fakeFs) {
     setupFn(patchedFs, `existsSync`, (p) => {
       try {
         return fakeFs.existsSync(p);
-      } catch (error) {
+      } catch {
         return false;
       }
     });
@@ -14282,7 +14297,7 @@ class ZipFS extends BasePortableFakeFS {
     let resolvedP;
     try {
       resolvedP = this.resolveFilename(`stat '${p}'`, p, void 0, false);
-    } catch (error) {
+    } catch {
       return false;
     }
     if (resolvedP === void 0)
@@ -15323,7 +15338,7 @@ Require stack:
         } else {
           resolution = originalFindPath.call(require$$0.Module, request, [path], isMain);
         }
-      } catch (error) {
+      } catch {
         continue;
       }
       if (resolution) {
@@ -16406,7 +16421,7 @@ function makeApi(runtimeState, opts) {
     try {
       candidates.push(unqualifiedPath);
       stat = opts.fakeFs.statSync(unqualifiedPath);
-    } catch (error) {
+    } catch {
     }
     if (stat && !stat.isDirectory())
       return opts.fakeFs.realpathSync(unqualifiedPath);
@@ -16414,7 +16429,7 @@ function makeApi(runtimeState, opts) {
       let pkgJson;
       try {
         pkgJson = JSON.parse(opts.fakeFs.readFileSync(ppath.join(unqualifiedPath, Filename.manifest), `utf8`));
-      } catch (error) {
+      } catch {
       }
       let nextUnqualifiedPath;
       if (pkgJson && pkgJson.main)
