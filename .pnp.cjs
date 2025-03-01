@@ -1027,7 +1027,7 @@ const RAW_RUNTIME_STATE =
           ["@octokit/auth-token", "npm:5.0.1"],\
           ["@octokit/graphql", "npm:8.0.1"],\
           ["@octokit/request", "npm:9.0.1"],\
-          ["@octokit/request-error", "npm:6.0.2"],\
+          ["@octokit/request-error", "npm:6.1.7"],\
           ["@octokit/types", "npm:12.2.0"],\
           ["before-after-hook", "npm:3.0.2"],\
           ["universal-user-agent", "npm:7.0.2"]\
@@ -1079,6 +1079,13 @@ const RAW_RUNTIME_STATE =
           ["@octokit/openapi-types", "npm:22.2.0"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:23.0.1", {\
+        "packageLocation": "./.yarn/cache/@octokit-openapi-types-npm-23.0.1-9110a4ae43-2647ae16bc.zip/node_modules/@octokit/openapi-types/",\
+        "packageDependencies": [\
+          ["@octokit/openapi-types", "npm:23.0.1"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["@octokit/plugin-paginate-rest", [\
@@ -1117,7 +1124,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@octokit/plugin-retry", "virtual:1e42dd456a5b3c408c4a35ad69c88420fc4b47b1e1c8dc0cd1ae77c3cebe5bd0c037dd372e0c5e2f7812d1b5489b8848ad90e9d5d2901c1d540a92be9329b47a#npm:7.0.3"],\
           ["@octokit/core", "npm:6.0.1"],\
-          ["@octokit/request-error", "npm:6.0.2"],\
+          ["@octokit/request-error", "npm:6.1.7"],\
           ["@octokit/types", "npm:12.2.0"],\
           ["@types/octokit__core", null],\
           ["bottleneck", "npm:2.19.5"]\
@@ -1159,7 +1166,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@octokit/request", "npm:9.0.1"],\
           ["@octokit/endpoint", "npm:10.0.0"],\
-          ["@octokit/request-error", "npm:6.0.2"],\
+          ["@octokit/request-error", "npm:6.1.7"],\
           ["@octokit/types", "npm:12.2.0"],\
           ["universal-user-agent", "npm:7.0.2"]\
         ],\
@@ -1167,11 +1174,11 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@octokit/request-error", [\
-      ["npm:6.0.2", {\
-        "packageLocation": "./.yarn/cache/@octokit-request-error-npm-6.0.2-c8463a10d0-ad2567500d.zip/node_modules/@octokit/request-error/",\
+      ["npm:6.1.7", {\
+        "packageLocation": "./.yarn/cache/@octokit-request-error-npm-6.1.7-31195a32c4-02273f6388.zip/node_modules/@octokit/request-error/",\
         "packageDependencies": [\
-          ["@octokit/request-error", "npm:6.0.2"],\
-          ["@octokit/types", "npm:12.2.0"]\
+          ["@octokit/request-error", "npm:6.1.7"],\
+          ["@octokit/types", "npm:13.8.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1198,6 +1205,14 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@octokit/types", "npm:13.5.0"],\
           ["@octokit/openapi-types", "npm:22.2.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:13.8.0", {\
+        "packageLocation": "./.yarn/cache/@octokit-types-npm-13.8.0-e28e37c196-7f260cd3f9.zip/node_modules/@octokit/types/",\
+        "packageDependencies": [\
+          ["@octokit/types", "npm:13.8.0"],\
+          ["@octokit/openapi-types", "npm:23.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -10122,7 +10137,7 @@ async function copyImpl(prelayout, postlayout, destinationFs, destination, sourc
 async function maybeLStat(baseFs, p) {
   try {
     return await baseFs.lstatPromise(p);
-  } catch (e) {
+  } catch {
     return null;
   }
 }
@@ -10381,7 +10396,7 @@ class CustomStatWatcher extends events.EventEmitter {
   stat() {
     try {
       return this.fakeFs.statSync(this.path, { bigint: this.bigint });
-    } catch (error) {
+    } catch {
       const statInstance = this.bigint ? new BigIntStatsEntry() : new StatEntry();
       return clearStats(statInstance);
     }
@@ -10707,7 +10722,7 @@ class FakeFS {
     let current = Buffer.alloc(0);
     try {
       current = await this.readFilePromise(p);
-    } catch (error) {
+    } catch {
     }
     if (Buffer.compare(current, content) === 0)
       return;
@@ -10717,7 +10732,7 @@ class FakeFS {
     let current = ``;
     try {
       current = await this.readFilePromise(p, `utf8`);
-    } catch (error) {
+    } catch {
     }
     const normalizedContent = automaticNewlines ? normalizeLineEndings(current, content) : content;
     if (current === normalizedContent)
@@ -10735,7 +10750,7 @@ class FakeFS {
     let current = Buffer.alloc(0);
     try {
       current = this.readFileSync(p);
-    } catch (error) {
+    } catch {
     }
     if (Buffer.compare(current, content) === 0)
       return;
@@ -10745,7 +10760,7 @@ class FakeFS {
     let current = ``;
     try {
       current = this.readFileSync(p, `utf8`);
-    } catch (error) {
+    } catch {
     }
     const normalizedContent = automaticNewlines ? normalizeLineEndings(current, content) : content;
     if (current === normalizedContent)
@@ -10785,13 +10800,13 @@ class FakeFS {
       let pid;
       try {
         [pid] = await this.readJsonPromise(lockPath);
-      } catch (error) {
+      } catch {
         return Date.now() - startTime < 500;
       }
       try {
         process.kill(pid, 0);
         return true;
-      } catch (error) {
+      } catch {
         return false;
       }
     };
@@ -10804,7 +10819,7 @@ class FakeFS {
             try {
               await this.unlinkPromise(lockPath);
               continue;
-            } catch (error2) {
+            } catch {
             }
           }
           if (Date.now() - startTime < 60 * 1e3) {
@@ -10824,7 +10839,7 @@ class FakeFS {
       try {
         await this.closePromise(fd);
         await this.unlinkPromise(lockPath);
-      } catch (error) {
+      } catch {
       }
     }
   }
@@ -11974,7 +11989,7 @@ class MountFS extends BasePortableFakeFS {
       let content;
       try {
         content = await sourceFs.readFilePromise(sourceP2);
-      } catch (error) {
+      } catch {
         throw Object.assign(new Error(`EINVAL: invalid argument, copyfile '${sourceP2}' -> '${destP2}'`), { code: `EINVAL` });
       }
       await destFs.writeFilePromise(destP2, content);
@@ -12006,7 +12021,7 @@ class MountFS extends BasePortableFakeFS {
       let content;
       try {
         content = sourceFs.readFileSync(sourceP2);
-      } catch (error) {
+      } catch {
         throw Object.assign(new Error(`EINVAL: invalid argument, copyfile '${sourceP2}' -> '${destP2}'`), { code: `EINVAL` });
       }
       destFs.writeFileSync(destP2, content);
@@ -12921,7 +12936,7 @@ function patchFs(patchedFs, fakeFs) {
     setupFn(patchedFs, `existsSync`, (p) => {
       try {
         return fakeFs.existsSync(p);
-      } catch (error) {
+      } catch {
         return false;
       }
     });
@@ -14282,7 +14297,7 @@ class ZipFS extends BasePortableFakeFS {
     let resolvedP;
     try {
       resolvedP = this.resolveFilename(`stat '${p}'`, p, void 0, false);
-    } catch (error) {
+    } catch {
       return false;
     }
     if (resolvedP === void 0)
@@ -15323,7 +15338,7 @@ Require stack:
         } else {
           resolution = originalFindPath.call(require$$0.Module, request, [path], isMain);
         }
-      } catch (error) {
+      } catch {
         continue;
       }
       if (resolution) {
@@ -16406,7 +16421,7 @@ function makeApi(runtimeState, opts) {
     try {
       candidates.push(unqualifiedPath);
       stat = opts.fakeFs.statSync(unqualifiedPath);
-    } catch (error) {
+    } catch {
     }
     if (stat && !stat.isDirectory())
       return opts.fakeFs.realpathSync(unqualifiedPath);
@@ -16414,7 +16429,7 @@ function makeApi(runtimeState, opts) {
       let pkgJson;
       try {
         pkgJson = JSON.parse(opts.fakeFs.readFileSync(ppath.join(unqualifiedPath, Filename.manifest), `utf8`));
-      } catch (error) {
+      } catch {
       }
       let nextUnqualifiedPath;
       if (pkgJson && pkgJson.main)
