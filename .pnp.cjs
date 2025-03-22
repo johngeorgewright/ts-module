@@ -1054,11 +1054,11 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@octokit/endpoint", [\
-      ["npm:10.0.0", {\
-        "packageLocation": "./.yarn/cache/@octokit-endpoint-npm-10.0.0-7cb552d0bd-a73a349920.zip/node_modules/@octokit/endpoint/",\
+      ["npm:10.1.3", {\
+        "packageLocation": "./.yarn/cache/@octokit-endpoint-npm-10.1.3-8c56837c60-22a03e106e.zip/node_modules/@octokit/endpoint/",\
         "packageDependencies": [\
-          ["@octokit/endpoint", "npm:10.0.0"],\
-          ["@octokit/types", "npm:12.2.0"],\
+          ["@octokit/endpoint", "npm:10.1.3"],\
+          ["@octokit/types", "npm:13.8.0"],\
           ["universal-user-agent", "npm:7.0.2"]\
         ],\
         "linkType": "HARD"\
@@ -1095,6 +1095,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@octokit-openapi-types-npm-22.2.0-ce9f704019-0471b0c789.zip/node_modules/@octokit/openapi-types/",\
         "packageDependencies": [\
           ["@octokit/openapi-types", "npm:22.2.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:23.0.1", {\
+        "packageLocation": "./.yarn/cache/@octokit-openapi-types-npm-23.0.1-9110a4ae43-2647ae16bc.zip/node_modules/@octokit/openapi-types/",\
+        "packageDependencies": [\
+          ["@octokit/openapi-types", "npm:23.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1176,7 +1183,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@octokit-request-npm-9.0.1-b76783150d-428e27ca11.zip/node_modules/@octokit/request/",\
         "packageDependencies": [\
           ["@octokit/request", "npm:9.0.1"],\
-          ["@octokit/endpoint", "npm:10.0.0"],\
+          ["@octokit/endpoint", "npm:10.1.3"],\
           ["@octokit/request-error", "npm:6.0.2"],\
           ["@octokit/types", "npm:12.2.0"],\
           ["universal-user-agent", "npm:7.0.2"]\
@@ -1216,6 +1223,14 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@octokit/types", "npm:13.5.0"],\
           ["@octokit/openapi-types", "npm:22.2.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:13.8.0", {\
+        "packageLocation": "./.yarn/cache/@octokit-types-npm-13.8.0-e28e37c196-7f260cd3f9.zip/node_modules/@octokit/types/",\
+        "packageDependencies": [\
+          ["@octokit/types", "npm:13.8.0"],\
+          ["@octokit/openapi-types", "npm:23.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
