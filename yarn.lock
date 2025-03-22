@@ -927,13 +927,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@octokit/openapi-types@npm:^22.2.0":
-  version: 22.2.0
-  resolution: "@octokit/openapi-types@npm:22.2.0"
-  checksum: 10/0471b0c789fada5aa2390e6f82ba477738228ef7d2d986dda9aab0cb625d1562bd178ba0ba4d2655ce841079cd5efff9e58ece2077c27e569ea22109ea301830
-  languageName: node
-  linkType: hard
-
 "@octokit/openapi-types@npm:^23.0.1":
   version: 23.0.1
   resolution: "@octokit/openapi-types@npm:23.0.1"
@@ -941,14 +934,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@octokit/openapi-types@npm:^24.2.0":
+  version: 24.2.0
+  resolution: "@octokit/openapi-types@npm:24.2.0"
+  checksum: 10/000897ebc6e247c2591049d6081e95eb5636f73798dadd695ee6048496772b58065df88823e74a760201828545a7ac601dd3c1bcd2e00079a62a9ee9d389409c
+  languageName: node
+  linkType: hard
+
 "@octokit/plugin-paginate-rest@npm:^11.0.0":
-  version: 11.3.1
-  resolution: "@octokit/plugin-paginate-rest@npm:11.3.1"
+  version: 11.6.0
+  resolution: "@octokit/plugin-paginate-rest@npm:11.6.0"
   dependencies:
-    "@octokit/types": "npm:^13.5.0"
+    "@octokit/types": "npm:^13.10.0"
   peerDependencies:
-    "@octokit/core": 5
-  checksum: 10/82f5bcc3a536a44bed0a205c8301176c0d210b7a1c6d035a79b31a102e2e02f46234a38629cc984a21be544194ac69151814e9a909416aa7389cdffd1297bcd9
+    "@octokit/core": ">=6"
+  checksum: 10/4b9e1ca479a0c577fe3dade6133b12ff172b6606586eb31ba2b7c7f651e0a173d365d45c5c7512e83659860a36fc4021ad6c0582be4698504fbfc201be17d164
   languageName: node
   linkType: hard
 
@@ -1016,12 +1016,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@octokit/types@npm:^13.5.0":
-  version: 13.5.0
-  resolution: "@octokit/types@npm:13.5.0"
+"@octokit/types@npm:^13.10.0":
+  version: 13.10.0
+  resolution: "@octokit/types@npm:13.10.0"
   dependencies:
-    "@octokit/openapi-types": "npm:^22.2.0"
-  checksum: 10/d2aeebc1d8684c4e950f054a52b484e898b72d9f5f8433bcf010161716eea20d1132820d922212f19557a8f147354f2674d1a27b22941308b7c298bdd2674ffa
+    "@octokit/openapi-types": "npm:^24.2.0"
+  checksum: 10/32f8f5010d7faae128b0cdd0c221f0ca8c3781fe44483ecd87162b3da507db667f7369acda81340f6e2c9c374d9a938803409c6085c2c01d98210b6c58efb99a
   languageName: node
   linkType: hard
 
