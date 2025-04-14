@@ -2069,7 +2069,7 @@ const RAW_RUNTIME_STATE =
           ["estree-walker", "npm:3.0.3"],\
           ["magic-string", "npm:0.30.17"],\
           ["msw", null],\
-          ["vite", "virtual:75826afb68f3a608daf84f9689ae8aa1236245c3c856a68b2f6602e2f7c2c425e368a879b8a9be6ebfb08483debb6d8c8ee8eca2e0a983a375e407e3f3f83a11#npm:6.2.2"]\
+          ["vite", "virtual:75826afb68f3a608daf84f9689ae8aa1236245c3c856a68b2f6602e2f7c2c425e368a879b8a9be6ebfb08483debb6d8c8ee8eca2e0a983a375e407e3f3f83a11#npm:6.2.6"]\
         ],\
         "packagePeers": [\
           "@types/msw",\
@@ -9262,15 +9262,15 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["vite", [\
-      ["npm:6.2.2", {\
-        "packageLocation": "./.yarn/cache/vite-npm-6.2.2-4aa434443a-30896cbdbc.zip/node_modules/vite/",\
+      ["npm:6.2.6", {\
+        "packageLocation": "./.yarn/cache/vite-npm-6.2.6-19e4bde6cc-d8fb01a190.zip/node_modules/vite/",\
         "packageDependencies": [\
-          ["vite", "npm:6.2.2"]\
+          ["vite", "npm:6.2.6"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:369a4723de5621406eebc7ee691fd61b6cb60ab3f898ec375217e392d24a0361947989a2aeee001ccf699f843ebc327d2ece7e112980764a8da4f26c442c19e4#npm:6.2.2", {\
-        "packageLocation": "./.yarn/__virtual__/vite-virtual-8b27e993cd/0/cache/vite-npm-6.2.2-4aa434443a-30896cbdbc.zip/node_modules/vite/",\
+      ["virtual:369a4723de5621406eebc7ee691fd61b6cb60ab3f898ec375217e392d24a0361947989a2aeee001ccf699f843ebc327d2ece7e112980764a8da4f26c442c19e4#npm:6.2.6", {\
+        "packageLocation": "./.yarn/__virtual__/vite-virtual-bbceccf878/0/cache/vite-npm-6.2.6-19e4bde6cc-d8fb01a190.zip/node_modules/vite/",\
         "packageDependencies": [\
           ["@types/jiti", null],\
           ["@types/less", null],\
@@ -9296,7 +9296,7 @@ const RAW_RUNTIME_STATE =
           ["sugarss", null],\
           ["terser", null],\
           ["tsx", null],\
-          ["vite", "virtual:369a4723de5621406eebc7ee691fd61b6cb60ab3f898ec375217e392d24a0361947989a2aeee001ccf699f843ebc327d2ece7e112980764a8da4f26c442c19e4#npm:6.2.2"],\
+          ["vite", "virtual:369a4723de5621406eebc7ee691fd61b6cb60ab3f898ec375217e392d24a0361947989a2aeee001ccf699f843ebc327d2ece7e112980764a8da4f26c442c19e4#npm:6.2.6"],\
           ["yaml", null]\
         ],\
         "packagePeers": [\
@@ -9324,8 +9324,8 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["virtual:75826afb68f3a608daf84f9689ae8aa1236245c3c856a68b2f6602e2f7c2c425e368a879b8a9be6ebfb08483debb6d8c8ee8eca2e0a983a375e407e3f3f83a11#npm:6.2.2", {\
-        "packageLocation": "./.yarn/__virtual__/vite-virtual-a991866298/0/cache/vite-npm-6.2.2-4aa434443a-30896cbdbc.zip/node_modules/vite/",\
+      ["virtual:75826afb68f3a608daf84f9689ae8aa1236245c3c856a68b2f6602e2f7c2c425e368a879b8a9be6ebfb08483debb6d8c8ee8eca2e0a983a375e407e3f3f83a11#npm:6.2.6", {\
+        "packageLocation": "./.yarn/__virtual__/vite-virtual-e76b84c49f/0/cache/vite-npm-6.2.6-19e4bde6cc-d8fb01a190.zip/node_modules/vite/",\
         "packageDependencies": [\
           ["@types/jiti", null],\
           ["@types/less", null],\
@@ -9351,7 +9351,7 @@ const RAW_RUNTIME_STATE =
           ["sugarss", null],\
           ["terser", null],\
           ["tsx", null],\
-          ["vite", "virtual:75826afb68f3a608daf84f9689ae8aa1236245c3c856a68b2f6602e2f7c2c425e368a879b8a9be6ebfb08483debb6d8c8ee8eca2e0a983a375e407e3f3f83a11#npm:6.2.2"],\
+          ["vite", "virtual:75826afb68f3a608daf84f9689ae8aa1236245c3c856a68b2f6602e2f7c2c425e368a879b8a9be6ebfb08483debb6d8c8ee8eca2e0a983a375e407e3f3f83a11#npm:6.2.6"],\
           ["yaml", null]\
         ],\
         "packagePeers": [\
@@ -9388,7 +9388,7 @@ const RAW_RUNTIME_STATE =
           ["debug", "virtual:a7bfb2de490dc25bd8e7ec695f8ec24e98deda21db74cc7fe37d4af0584d36b239c5f8963ab47baeec4714d474402c132cb50e71bb6ca5918fa847e37a04e62f#npm:4.4.0"],\
           ["es-module-lexer", "npm:1.6.0"],\
           ["pathe", "npm:2.0.3"],\
-          ["vite", "virtual:369a4723de5621406eebc7ee691fd61b6cb60ab3f898ec375217e392d24a0361947989a2aeee001ccf699f843ebc327d2ece7e112980764a8da4f26c442c19e4#npm:6.2.2"],\
+          ["vite", "virtual:369a4723de5621406eebc7ee691fd61b6cb60ab3f898ec375217e392d24a0361947989a2aeee001ccf699f843ebc327d2ece7e112980764a8da4f26c442c19e4#npm:6.2.6"],\
           ["vite-node", "npm:3.1.1"]\
         ],\
         "linkType": "HARD"\
@@ -9434,7 +9434,7 @@ const RAW_RUNTIME_STATE =
           ["tinyexec", "npm:0.3.2"],\
           ["tinypool", "npm:1.0.2"],\
           ["tinyrainbow", "npm:2.0.0"],\
-          ["vite", "virtual:75826afb68f3a608daf84f9689ae8aa1236245c3c856a68b2f6602e2f7c2c425e368a879b8a9be6ebfb08483debb6d8c8ee8eca2e0a983a375e407e3f3f83a11#npm:6.2.2"],\
+          ["vite", "virtual:75826afb68f3a608daf84f9689ae8aa1236245c3c856a68b2f6602e2f7c2c425e368a879b8a9be6ebfb08483debb6d8c8ee8eca2e0a983a375e407e3f3f83a11#npm:6.2.6"],\
           ["vite-node", "npm:3.1.1"],\
           ["vitest", "virtual:88f814a124068bdc4740e859aad4ec1d849b5be1a2e73fe9d27fb2e081860b9472864f073d3387c34e778af219e8b5f23381757469cefcb8753637c931bdace5#npm:3.1.1"],\
           ["why-is-node-running", "npm:2.3.0"]\
@@ -13948,14 +13948,9 @@ class LibZipImpl {
   libzip;
   lzSource;
   zip;
-  /**
-   * A cache of indices mapped to file sources.
-   * Populated by `setFileSource` calls.
-   * Required for supporting read after write.
-   */
-  fileSources = /* @__PURE__ */ new Map();
   listings;
   symlinkCount;
+  filesShouldBeCached = true;
   constructor(opts) {
     const buffer = `buffer` in opts ? opts.buffer : opts.baseFs.readFileSync(opts.path);
     this.libzip = getInstance();
@@ -14026,7 +14021,6 @@ class LibZipImpl {
           throw this.makeLibzipError(this.libzip.getError(this.zip));
         }
       }
-      this.fileSources.set(newIndex, buffer);
       return newIndex;
     } catch (error) {
       this.libzip.source.free(lzSource);
@@ -14057,9 +14051,6 @@ class LibZipImpl {
     return this.libzip.name.locate(this.zip, name, 0);
   }
   getFileSource(index) {
-    const cachedFileSource = this.fileSources.get(index);
-    if (typeof cachedFileSource !== `undefined`)
-      return { data: cachedFileSource, compressionMethod: 0 };
     const stat = this.libzip.struct.statS();
     const rc = this.libzip.statIndex(this.zip, index, 0, 0, stat);
     if (rc === -1)
@@ -14090,7 +14081,6 @@ class LibZipImpl {
     }
   }
   deleteEntry(index) {
-    this.fileSources.delete(index);
     const rc = this.libzip.delete(this.zip, index);
     if (rc === -1) {
       throw this.makeLibzipError(this.libzip.getError(this.zip));
@@ -14225,6 +14215,12 @@ class ZipFS extends BasePortableFakeFS {
   zipImpl;
   listings = /* @__PURE__ */ new Map();
   entries = /* @__PURE__ */ new Map();
+  /**
+   * A cache of indices mapped to file sources.
+   * Populated by `setFileSource` calls.
+   * Required for supporting read after write.
+   */
+  fileSources = /* @__PURE__ */ new Map();
   symlinkCount;
   fds = /* @__PURE__ */ new Map();
   nextFd = 0;
@@ -14650,6 +14646,7 @@ class ZipFS extends BasePortableFakeFS {
     this.entries.delete(p);
     if (typeof entry === `undefined`)
       return;
+    this.fileSources.delete(entry);
     if (this.isSymbolicLink(entry)) {
       this.symlinkCount--;
     }
@@ -14710,6 +14707,7 @@ class ZipFS extends BasePortableFakeFS {
       compression = [method, this.level];
     }
     const newIndex = this.zipImpl.setFileSource(target, compression, buffer);
+    this.fileSources.set(newIndex, buffer);
     return newIndex;
   }
   isSymbolicLink(index) {
@@ -14722,8 +14720,13 @@ class ZipFS extends BasePortableFakeFS {
     return (attributes & fs.constants.S_IFMT) === fs.constants.S_IFLNK;
   }
   getFileSource(index, opts = { asyncDecompress: false }) {
+    const cachedFileSource = this.fileSources.get(index);
+    if (typeof cachedFileSource !== `undefined`)
+      return cachedFileSource;
     const { data, compressionMethod } = this.zipImpl.getFileSource(index);
     if (compressionMethod === STORE) {
+      if (this.zipImpl.filesShouldBeCached)
+        this.fileSources.set(index, data);
       return data;
     } else if (compressionMethod === DEFLATE) {
       if (opts.asyncDecompress) {
@@ -14732,12 +14735,17 @@ class ZipFS extends BasePortableFakeFS {
             if (error) {
               reject(error);
             } else {
+              if (this.zipImpl.filesShouldBeCached)
+                this.fileSources.set(index, result);
               resolve(result);
             }
           });
         });
       } else {
-        return zlib__default.default.inflateRawSync(data);
+        const decompressedData = zlib__default.default.inflateRawSync(data);
+        if (this.zipImpl.filesShouldBeCached)
+          this.fileSources.set(index, decompressedData);
+        return decompressedData;
       }
     } else {
       throw new Error(`Unsupported compression method: ${compressionMethod}`);
@@ -15202,6 +15210,7 @@ class JsZipImpl {
   fd;
   baseFs;
   entries;
+  filesShouldBeCached = false;
   constructor(opts) {
     if (`buffer` in opts)
       throw new Error(`Buffer based zip archives are not supported`);
@@ -15209,7 +15218,13 @@ class JsZipImpl {
       throw new Error(`Writable zip archives are not supported`);
     this.baseFs = opts.baseFs;
     this.fd = this.baseFs.openSync(opts.path, `r`);
-    this.entries = JsZipImpl.readZipSync(this.fd, this.baseFs, opts.size);
+    try {
+      this.entries = JsZipImpl.readZipSync(this.fd, this.baseFs, opts.size);
+    } catch (error) {
+      this.baseFs.closeSync(this.fd);
+      this.fd = `closed`;
+      throw error;
+    }
   }
   static readZipSync(fd, baseFs, fileSize) {
     if (fileSize < noCommentCDSize)
@@ -15337,6 +15352,8 @@ class JsZipImpl {
     return -1;
   }
   getFileSource(index) {
+    if (this.fd === `closed`)
+      throw new Error(`ZIP file is closed`);
     const entry = this.entries[index];
     const localHeaderBuf = Buffer.alloc(30);
     this.baseFs.readSync(
@@ -15354,6 +15371,10 @@ class JsZipImpl {
     return { data: buffer, compressionMethod: entry.compressionMethod };
   }
   discard() {
+    if (this.fd !== `closed`) {
+      this.baseFs.closeSync(this.fd);
+      this.fd = `closed`;
+    }
   }
   addDirectory(path) {
     throw new Error(`Not implemented`);
