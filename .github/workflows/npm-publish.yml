@@ -47,4 +47,4 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         with:
           extra_plugins: |
-            @semantic-release/exec
+            @semantic-release/exec@^7
