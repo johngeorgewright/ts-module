@@ -8,15 +8,7 @@ module.exports = {
   plugins: [
     '@semantic-release/commit-analyzer',
     '@semantic-release/release-notes-generator',
-    [
-      '@semantic-release/exec',
-      {
-        verifyConditionsCmd: 'yarn npm whoami --publish',
-        prepareCmd:
-          "yarn version ${nextRelease.version} && echo 'version=${nextRelease.version}' >> $GITHUB_OUTPUT",
-        publishCmd: 'yarn npm publish',
-      },
-    ],
+    '@semantic-release/npm',
     [
       '@semantic-release/git',
       {

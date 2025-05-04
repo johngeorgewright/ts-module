@@ -4,34 +4,22 @@ on:
   pull_request:
 
 jobs:
-  cache:
-    uses: johngeorgewright/workflows/.github/workflows/yarn-cache.yml@main
-
   test:
     name: Test
     runs-on: ubuntu-latest
-    needs: [cache]
-    strategy:
-      matrix:
-        node-version: [18, 20, 22]
 
     steps:
       - name: Checkout project
         uses: actions/checkout@v4
 
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node-version }}
+      - name: Use Bun
+        uses: oven-sh/setup-bun@v2
 
-      - name: Restore cache
-        uses: actions/cache@v4
-        with:
-          key: ${{ needs.cache.outputs.key }}
-          path: ${{ needs.cache.outputs.path }}
+      - name: Install
+        run: bun install
 
       - name: Build
-        run: yarn build
+        run: bun run build
 
       - name: Test
-        run: yarn test
+        run: bun test

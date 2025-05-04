@@ -9,11 +9,9 @@
     ".": "./dist/index.js"
   },
   "scripts": {
-    "build": "yarn clean && tsc",
+    "build": "bun run clean && tsc",
     "clean": "rimraf dist",
-    "prepare": "husky",
-    "start": " tsc --watch --preserveWatchOutput",
-    "test": "vitest"
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -30,19 +28,17 @@
     "@commitlint/cli": "19.8.0",
     "@commitlint/config-conventional": "19.8.0",
     "@commitlint/types": "19.8.0",
-    "@types/node": "22.15.3",
+    "@types/bun": "latest",
     "husky": "9.1.7",
     "lint-staged": "15.5.1",
     "nodemon": "3.1.10",
     "prettier": "3.5.3",
     "rimraf": "6.0.1",
-    "ts-node": "10.9.2",
-    "typescript": "5.8.3",
-    "vitest": "3.1.2"
+    "typescript": "5.8.3"
   },
   "lint-staged": {
     "*.{md,json,js,jsx,ts,tsx,yml,yaml}": [
-      "yarn prettier --ignore-path .gitignore --write"
+      "bunx prettier --ignore-path .gitignore --write"
     ]
   },
   "dependencies": {

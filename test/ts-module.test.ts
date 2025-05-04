@@ -1,4 +1,4 @@
-import { expect, test } from 'vitest'
+import { expect, test } from 'bun:test'
 import { tsModule } from '../src/foo.js'
 
 test("it's a module", () => {
