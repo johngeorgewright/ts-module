@@ -14,17 +14,19 @@ jobs:
         with:
           token: ${{ secrets.GH_TOKEN }}
 
-      - name: Use Bun
-        uses: oven-sh/setup-bun@v2
+      - name: Use Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
 
       - name: Install
-        run: bun install
+        run: npm ci
 
       - name: Build
-        run: bun run build
+        run: npm run build
 
       - name: Test
-        run: bun test
+        run: npm test
 
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v4
