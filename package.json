@@ -11,7 +11,8 @@
   "scripts": {
     "build": "bun run clean && tsc",
     "clean": "rimraf dist",
-    "prepare": "husky"
+    "prepare": "husky",
+    "test": "vitest"
   },
   "repository": {
     "type": "git",
@@ -28,13 +29,14 @@
     "@commitlint/cli": "19.8.0",
     "@commitlint/config-conventional": "19.8.0",
     "@commitlint/types": "19.8.0",
-    "@types/bun": "latest",
+    "@types/node": "^22.15.29",
     "husky": "9.1.7",
     "lint-staged": "15.5.1",
     "nodemon": "3.1.10",
     "prettier": "3.5.3",
     "rimraf": "6.0.1",
-    "typescript": "5.8.3"
+    "typescript": "5.8.3",
+    "vitest": "^3.1.4"
   },
   "lint-staged": {
     "*.{md,json,js,jsx,ts,tsx,yml,yaml}": [
