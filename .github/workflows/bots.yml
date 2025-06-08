@@ -13,5 +13,5 @@ jobs:
       - uses: actions/checkout@v4
       - uses: hmarr/auto-approve-action@v2
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GH_TOKEN }}
           review-message: '@dependabot merge'
