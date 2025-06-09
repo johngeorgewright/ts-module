@@ -1,14 +1,20 @@
 // @ts-check
 
 /**
- * @type {import('semantic-release').Options}
+ * @type {import('npm:semantic-release').Options}
  */
 module.exports = {
   branches: ['master'],
   plugins: [
     '@semantic-release/commit-analyzer',
     '@semantic-release/release-notes-generator',
-    '@semantic-release/npm',
+    [
+      '@semantic-release/exec',
+      {
+        publish:
+          '[ $(cat deno.json | jq -r .private) != "true" ] && deno publish --version ${nextRelease.version} --token $JSR_TOKEN',
+      },
+    ],
     [
       '@semantic-release/git',
       {
