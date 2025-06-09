@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/hook.sh"
+
+deno run --allow-env --allow-read --allow-run --allow-sys npm:lint-staged

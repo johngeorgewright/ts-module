@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/hook.sh"
+
+# TODO: use the following line once https://github.com/denoland/deno/issues/29678
+# has been resolved
+# deno run --allow-env --allow-read --allow-sys npm:@commitlint/cli --edit $1
+deno run --allow-env --allow-read --allow-sys https://esm.sh/@commitlint/cli --edit $1
