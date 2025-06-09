@@ -12,7 +12,7 @@ module.exports = {
       '@semantic-release/exec',
       {
         publish:
-          '[ $(cat deno.json | jq -r .private) != "true" ] && deno publish --version ${nextRelease.version} --token $JSR_TOKEN',
+          '[ $(cat deno.json | jq -r .private) != "true" ] && deno publish --version ${nextRelease.version}',
       },
     ],
     [
