@@ -9,8 +9,5 @@
   "fmt": {
     "singleQuote": true,
     "semiColons": false
-  },
-  "imports": {
-    "cosmiconfig": "https://esm.sh/cosmiconfig@9.0.0"
   }
 }
