@@ -5,8 +5,8 @@ on:
     branches: [master]
 
 jobs:
-  publish-npm:
-    name: NPM
+  publish:
+    name: Publish
     runs-on: ubuntu-latest
     permissions:
       id-token: write
@@ -17,18 +17,18 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
 
       - name: Use Node
-        uses: actions/setup-node@v4
+        uses: denoland/setup-deno@v2
         with:
-          node-version-file: .nvmrc
+          deno-version: v2.x
 
-      - name: Install
-        run: npm ci
+      - name: Check
+        run: deno check
 
-      - name: Build
-        run: npm run build
+      - name: Lint
+        run: deno lint
 
       - name: Test
-        run: npm test
+        run: deno test
 
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v4
