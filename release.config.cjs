@@ -1,5 +1,10 @@
 // @ts-check
 
+const bumpVersion =
+  'cat deno.json | jq \'.version |= "${nextRelease.version}"\' > deno.tmp.json && mv deno.tmp.json deno.json'
+const isPublicPackage = '[ $(cat deno.json | jq -r .private) != "true" ]'
+const publish = 'deno publish'
+
 /**
  * @type {import('npm:semantic-release').Options}
  */
@@ -11,8 +16,9 @@ module.exports = {
     [
       '@semantic-release/exec',
       {
-        publish:
-          '[ $(cat deno.json | jq -r .private) != "true" ] && deno publish --version ${nextRelease.version}',
+        prepareCmd: `${isPublicPackage} && ${bumpVersion}`,
+        verifyReleaseCmd: `${isPublicPackage} && ${publish} --dry-run`,
+        publishCmd: `${isPublicPackage} && ${publish}`,
       },
     ],
     [
