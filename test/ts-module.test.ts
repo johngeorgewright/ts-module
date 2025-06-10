@@ -1,7 +1,8 @@
-import { test } from 'jsr:@std/testing/bdd'
-import { expect } from 'jsr:@std/expect'
-import { tsModule } from '../src/foo.ts'
+import { assertEquals } from 'jsr:@std/assert'
+import { tsModule } from '@johngeorgewright/ts-module'
 
-test("it's a module", () => {
-  expect(tsModule()).toBe('I am a TypeScript module')
+Deno.test('tsModule', async (t) => {
+  await t.step('returns a static string', () => {
+    assertEquals(tsModule(), 'I am a TypeScript module')
+  })
 })
