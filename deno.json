@@ -9,5 +9,12 @@
   "fmt": {
     "semiColons": false,
     "singleQuote": true
+  },
+  "publish": {
+    "include": [
+      "LICENSE",
+      "README.md",
+      "src/**/*.ts"
+    ]
   }
 }
