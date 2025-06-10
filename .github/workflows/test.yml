@@ -1,7 +1,8 @@
-name: Pull Request
+name: Test
 
 on:
   pull_request:
+  workflow_call:
 
 jobs:
   test:
@@ -12,16 +13,16 @@ jobs:
       - name: Checkout project
         uses: actions/checkout@v4
 
-      - name: Use Node
+      - name: Use Deno
         uses: denoland/setup-deno@v2
         with:
           deno-version: v2.x
 
       - name: Check
-        run: deno check
+        run: deno check --frozen src
 
       - name: Lint
-        run: deno lint
+        run: deno lint src
 
       - name: Test
-        run: deno test
+        run: deno test --frozen test
